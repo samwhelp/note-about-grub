@@ -109,38 +109,39 @@ is_not_debug () {
 
 
 ################################################################################
-### Head: Model / live_usb_disk_for_uefi_partition_create
+### Head: Model / live_usb_disk_for_bios_partition_create
 ##
 
-live_usb_disk_for_uefi_partition_create () {
+live_usb_disk_for_bios_partition_create () {
 
 	util_error_echo
 	util_error_echo "##"
-	util_error_echo "## ## live_usb_disk_for_uefi_partition_create"
+	util_error_echo "## ## live_usb_disk_for_bios_partition_create"
 	util_error_echo "##"
 	util_error_echo
 
 
-	mod_create_partition_for_uefi "/dev/sdc"
+	mod_create_partition_for_bios "/dev/sdc"
 
 	return 0
 }
 
 
-mod_create_partition_for_uefi () {
+mod_create_partition_for_bios () {
 
 	local disk_target="${1}"
 	##local disk_target="/dev/sdc"
 
-	local part_uefi="${disk_target}1"
+	local part_uefi="${disk_target}2"
 
 	sudo parted --script -- "${disk_target}" \
 		mktable gpt \
-		mkpart primary "1M" '100%' \
-		set 1 esp on \
+		mkpart primary 1M 2M \
+		mkpart primary 2M '100%' \
+		set 1 bios_grub on \
 		print
 
-	sudo mkfs.fat -F 32 -n LIVEUEFI "${part_uefi}"
+	sudo mkfs.ext4 -L LIVEBIOS "${part_uefi}"
 
 
 	sudo partprobe /dev/sdc
@@ -149,7 +150,7 @@ mod_create_partition_for_uefi () {
 
 
 ##
-### Tail: Model / live_usb_disk_for_uefi_partition_create
+### Tail: Model / live_usb_disk_for_bios_partition_create
 ################################################################################
 
 
@@ -162,7 +163,7 @@ main_usb_disk_create () {
 
 	#util_error_echo 'main_usb_disk_create'
 
-	live_usb_disk_for_uefi_partition_create
+	live_usb_disk_for_bios_partition_create
 
 
 
