@@ -121,13 +121,13 @@ live_usb_disk_for_bios_partition_create () {
 	util_error_echo
 
 
-	mod_create_partition_for_bios "/dev/sdc"
+	mod_partition_create_for_bios "/dev/sdc"
 
 	return 0
 }
 
 
-mod_create_partition_for_bios () {
+mod_partition_create_for_bios () {
 
 	local disk_target="${1}"
 	##local disk_target="/dev/sdc"
