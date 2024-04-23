@@ -1,7 +1,7 @@
 ---
 title: Boot ISO
 nav_order: 7030
-has_children: false
+has_children: true
 parent: 如何
 ---
 
