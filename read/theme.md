@@ -7,4 +7,4 @@ has_children: false
 
 # Theme
 
-* [grub-theme](https://samwhelp.github.io/note-about-theme/read/boot-theme/grub-theme.html)
+* Theme 探索筆記 / [grub-theme](https://samwhelp.github.io/note-about-theme/read/boot-theme/grub-theme.html)
