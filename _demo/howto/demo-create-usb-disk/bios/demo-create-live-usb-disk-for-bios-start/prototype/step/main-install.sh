@@ -33,8 +33,6 @@ THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "${0}")" ; pwd)"
 
 
 
-
-
 ################################################################################
 ### Head: Util / Debug
 ##
@@ -56,6 +54,7 @@ util_error_echo () {
 ##
 ### Head: Util / Debug
 ################################################################################
+
 
 
 
@@ -108,6 +107,7 @@ is_not_debug () {
 
 
 
+
 ################################################################################
 ### Head: Model / live_usb_disk_for_bios_main_install
 ##
@@ -124,8 +124,8 @@ live_usb_disk_for_bios_main_install () {
 	mod_main_install_for_bios
 
 	return 0
-}
 
+}
 
 mod_main_install_for_bios () {
 
@@ -165,10 +165,10 @@ mod_main_install_for_bios_grub_install () {
 
 }
 
-
 ##
 ### Tail: Model / live_usb_disk_for_bios_main_install
 ################################################################################
+
 
 
 

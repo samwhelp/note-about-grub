@@ -33,8 +33,6 @@ THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "${0}")" ; pwd)"
 
 
 
-
-
 ################################################################################
 ### Head: Util / Debug
 ##
@@ -56,7 +54,6 @@ util_error_echo () {
 ##
 ### Head: Util / Debug
 ################################################################################
-
 
 
 ################################################################################
@@ -108,6 +105,7 @@ is_not_debug () {
 
 
 
+
 ################################################################################
 ### Head: Model / live_usb_disk_for_bios_partition_create
 ##
@@ -124,8 +122,8 @@ live_usb_disk_for_bios_partition_create () {
 	mod_partition_create_for_bios "/dev/sdc"
 
 	return 0
-}
 
+}
 
 mod_partition_create_for_bios () {
 
@@ -136,8 +134,8 @@ mod_partition_create_for_bios () {
 
 	sudo parted --script -- "${disk_target}" \
 		mktable gpt \
-		mkpart primary 1M 2M \
-		mkpart primary 2M '100%' \
+		mkpart primary '0%' '2M' \
+		mkpart primary '2M' '100%' \
 		set 1 bios_grub on \
 		print
 
@@ -148,10 +146,10 @@ mod_partition_create_for_bios () {
 
 }
 
-
 ##
 ### Tail: Model / live_usb_disk_for_bios_partition_create
 ################################################################################
+
 
 
 
