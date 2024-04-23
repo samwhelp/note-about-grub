@@ -49,6 +49,26 @@ grand_parent: 如何
 
 
 
+## 操作環境
+
+> 我撰寫此篇的內容，是在「Debian 12 Bookworm」完成的。
+
+> GRUB 的版本是「2.06」
+
+執行
+
+``` sh
+sudo grub-install --version
+```
+
+顯示
+
+```
+grub-install (GRUB) 2.06-13+deb12u1
+````
+
+
+
 ## 相關議題
 
 | 相關議題 |
