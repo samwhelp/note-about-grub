@@ -33,8 +33,6 @@ THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "${0}")" ; pwd)"
 
 
 
-
-
 ################################################################################
 ### Head: Util / Debug
 ##
@@ -56,7 +54,6 @@ util_error_echo () {
 ##
 ### Head: Util / Debug
 ################################################################################
-
 
 
 ################################################################################
@@ -108,6 +105,7 @@ is_not_debug () {
 
 
 
+
 ################################################################################
 ### Head: Model / live_usb_disk_for_uefi_partition_create
 ##
@@ -126,7 +124,6 @@ live_usb_disk_for_uefi_partition_create () {
 	return 0
 }
 
-
 mod_partition_create_for_uefi () {
 
 	local disk_target="${1}"
@@ -136,7 +133,7 @@ mod_partition_create_for_uefi () {
 
 	sudo parted --script -- "${disk_target}" \
 		mktable gpt \
-		mkpart primary "1M" '100%' \
+		mkpart primary "0%" '100%' \
 		set 1 esp on \
 		print
 
@@ -147,10 +144,10 @@ mod_partition_create_for_uefi () {
 
 }
 
-
 ##
 ### Tail: Model / live_usb_disk_for_uefi_partition_create
 ################################################################################
+
 
 
 

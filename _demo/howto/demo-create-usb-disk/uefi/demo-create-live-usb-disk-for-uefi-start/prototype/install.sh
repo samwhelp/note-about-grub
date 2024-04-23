@@ -121,13 +121,13 @@ live_usb_disk_for_uefi_partition_create () {
 	util_error_echo
 
 
-	mod_create_partition_for_uefi "/dev/sdc"
+	mod_partition_create_for_uefi "/dev/sdc"
 
 	return 0
 }
 
 
-mod_create_partition_for_uefi () {
+mod_partition_create_for_uefi () {
 
 	local disk_target="${1}"
 	##local disk_target="/dev/sdc"
@@ -136,7 +136,7 @@ mod_create_partition_for_uefi () {
 
 	sudo parted --script -- "${disk_target}" \
 		mktable gpt \
-		mkpart primary "1M" '100%' \
+		mkpart primary "0%" '100%' \
 		set 1 esp on \
 		print
 

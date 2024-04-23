@@ -33,8 +33,6 @@ THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "${0}")" ; pwd)"
 
 
 
-
-
 ################################################################################
 ### Head: Util / Debug
 ##
@@ -56,7 +54,6 @@ util_error_echo () {
 ##
 ### Head: Util / Debug
 ################################################################################
-
 
 
 ################################################################################
@@ -108,6 +105,7 @@ is_not_debug () {
 
 
 
+
 ################################################################################
 ### Head: Model / live_usb_disk_for_uefi_main_install
 ##
@@ -125,7 +123,6 @@ live_usb_disk_for_uefi_main_install () {
 
 	return 0
 }
-
 
 mod_main_install_for_uefi () {
 
@@ -163,7 +160,6 @@ mod_main_install_for_uefi_mount () {
 	return 0
 
 }
-
 
 mod_main_install_for_uefi_uefi_boot_image_create () {
 
@@ -221,10 +217,10 @@ mod_main_install_for_uefi_uefi_boot_image_create () {
 
 }
 
-
 ##
 ### Tail: Model / live_usb_disk_for_uefi_main_install
 ################################################################################
+
 
 
 
