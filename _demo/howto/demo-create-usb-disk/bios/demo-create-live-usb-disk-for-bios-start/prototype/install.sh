@@ -149,6 +149,160 @@ mod_partition_create_for_bios () {
 ##
 ### Tail: Model / live_usb_disk_for_bios_partition_create
 ################################################################################
+################################################################################
+### Head: Model / live_usb_disk_for_bios_main_install
+##
+
+live_usb_disk_for_bios_main_install () {
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## live_usb_disk_for_bios_main_install"
+	util_error_echo "##"
+	util_error_echo
+
+
+	mod_main_install_for_bios
+
+	return 0
+
+}
+
+mod_main_install_for_bios () {
+
+	mod_main_install_for_bios_prepare
+
+	mod_main_install_for_bios_mount
+
+	mod_main_install_for_bios_grub_install
+
+	return 0
+
+}
+
+mod_main_install_for_bios_prepare () {
+
+	##
+	## /usr/lib/grub/i386-pc/
+	##
+
+	sudo apt-get install grub-pc-bin
+
+
+	return 0
+
+}
+
+mod_main_install_for_bios_mount () {
+
+
+	mkdir -p ./mnt
+
+	sudo umount ./mnt
+
+	sudo mount /dev/sdc2 ./mnt
+
+
+	return 0
+
+}
+
+mod_main_install_for_bios_grub_install () {
+
+
+	sudo grub-install \
+		--boot-directory=mnt/boot \
+		--target=i386-pc \
+		--fonts=unicode \
+		/dev/sdc
+
+
+	return 0
+
+}
+
+##
+### Tail: Model / live_usb_disk_for_bios_main_install
+################################################################################
+
+
+
+
+################################################################################
+### Head: Model / live_usb_disk_for_bios_main_install
+##
+
+live_usb_disk_for_bios_main_install () {
+
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## live_usb_disk_for_bios_main_install"
+	util_error_echo "##"
+	util_error_echo
+
+
+	mod_main_install_for_bios
+
+	return 0
+
+}
+
+mod_main_install_for_bios () {
+
+	mod_main_install_for_bios_prepare
+
+	mod_main_install_for_bios_mount
+
+	mod_main_install_for_bios_grub_install
+
+	return 0
+
+}
+
+mod_main_install_for_bios_prepare () {
+
+	##
+	## /usr/lib/grub/i386-pc/
+	##
+
+	sudo apt-get install grub-pc-bin
+
+
+	return 0
+
+}
+
+mod_main_install_for_bios_mount () {
+
+
+	mkdir -p ./mnt
+
+	sudo umount ./mnt
+
+	sudo mount /dev/sdc2 ./mnt
+
+
+	return 0
+
+}
+
+mod_main_install_for_bios_grub_install () {
+
+
+	sudo grub-install \
+		--boot-directory=mnt/boot \
+		--target=i386-pc \
+		--fonts=unicode \
+		/dev/sdc
+
+
+	return 0
+
+}
+
+##
+### Tail: Model / live_usb_disk_for_bios_main_install
+################################################################################
 
 
 
@@ -162,6 +316,8 @@ main_usb_disk_create () {
 	#util_error_echo 'main_usb_disk_create'
 
 	live_usb_disk_for_bios_partition_create
+
+	live_usb_disk_for_bios_main_install
 
 
 
