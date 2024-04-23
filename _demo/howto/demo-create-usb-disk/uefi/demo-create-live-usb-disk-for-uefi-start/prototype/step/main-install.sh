@@ -129,14 +129,93 @@ live_usb_disk_for_uefi_main_install () {
 
 mod_main_install_for_uefi () {
 
+	mod_main_install_for_uefi_prepare
+
 	mod_main_install_for_uefi_mount
+
+	mod_main_install_for_uefi_uefi_boot_image_create
 
 	return 0
 
 }
 
+mod_main_install_for_uefi_prepare () {
+
+	#sudo apt-get install grub-efi-amd64-bin grub-efi-ia32-bin
+
+	sudo apt-get install grub-efi-amd64-bin
+
+	#sudo apt-get install grub-efi-ia32-bin
+
+	return 0
+}
+
 mod_main_install_for_uefi_mount () {
 
+
+	mkdir -p ./mnt
+
+	sudo umount ./mnt
+
+	sudo mount /dev/sdc1 ./mnt
+
+
+	return 0
+
+}
+
+
+mod_main_install_for_uefi_uefi_boot_image_create () {
+
+
+	cd ./mnt
+
+	sudo mkdir -p EFI/BOOT EFI/grub
+
+	sudo cp /usr/lib/grub/x86_64-efi/. EFI/grub/x86_64-efi -rf
+
+
+
+	sudo grub-mkimage \
+		-O x86_64-efi \
+		-o EFI/BOOT/bootx64.efi \
+		-d /usr/lib/grub/x86_64-efi \
+		-p /EFI/grub \
+			fat \
+			iso9660 \
+			part_gpt \
+			part_msdos \
+			normal \
+			boot \
+			linux \
+			linux16 \
+			configfile \
+			loopback \
+			chain \
+			efifwsetup \
+			efi_gop \
+			efi_uga \
+			ls \
+			search \
+			search_label \
+			search_fs_uuid \
+			search_fs_file \
+			gfxterm \
+			gfxterm_background \
+			gfxterm_menu \
+			test \
+			all_video \
+			loadenv \
+			exfat \
+			ext2 \
+			ntfs \
+			btrfs \
+			hfsplus \
+			udf \
+			cat
+
+
+	cd "${OLDPWD}"
 
 	return 0
 
