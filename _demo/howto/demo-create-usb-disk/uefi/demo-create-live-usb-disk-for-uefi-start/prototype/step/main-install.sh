@@ -164,6 +164,8 @@ mod_main_install_for_uefi_mount () {
 
 	sudo umount ./mnt
 
+	sudo umount /dev/sdc1
+
 	sudo mount /dev/sdc1 ./mnt
 
 
