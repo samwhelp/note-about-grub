@@ -8,3 +8,19 @@ grand_parent: 如何
 
 
 # Create Live Usb Disk for Uefi
+
+
+
+
+## 主題
+
+* [參考文章](#參考文章)
+
+
+
+
+## 參考文章
+
+* 晚起的蟲 / [開始了解 GPT 並安裝 grub](http://amitmason.blogspot.com/2018/07/gpt.html)
+* OsoLinux 快速安裝指南 / [UEFI  Live 啟動盤](https://osolinux.sourceforge.io/doc-1.html)
+* G. T. Wang / [Linux 的 Parted 指令教學：建立、變更與修復磁碟分割區](https://osolinux.sourceforge.io/doc-1.html)
