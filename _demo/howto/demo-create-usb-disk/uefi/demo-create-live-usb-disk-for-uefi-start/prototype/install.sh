@@ -114,9 +114,34 @@ is_not_debug () {
 
 live_usb_disk_for_uefi_partition_create () {
 
-	util_error_echo "live_usb_disk_for_uefi_partition_create"
+	util_error_echo
+	util_error_echo "##"
+	util_error_echo "## ## live_usb_disk_for_uefi_partition_create"
+	util_error_echo "##"
+	util_error_echo
+
+
+	mod_create_partition_for_uefi "/dev/sdc"
 
 	return 0
+}
+
+
+mod_create_partition_for_uefi () {
+
+	local disk_target="${1}"
+	##local disk_target="/dev/sdc"
+
+	local part_uefi="${disk_target}1"
+
+	sudo parted --script -- "${disk_target}" \
+		mktable gpt \
+		mkpart primary "1M" '100%' \
+		set 1 esp on \
+		print
+
+	sudo mkfs.fat -F32 "${part_uefi}"
+
 }
 
 
