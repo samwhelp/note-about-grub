@@ -27,4 +27,4 @@ has_children: true
 | --- | --- |
 | [GRUB Boot ISO](https://samwhelp.github.io/note-about-grub/read/howto/boot_iso.html) | 透過GRUB和ISO檔開機的設定範例 |
 | [Create Live Usb Disk for Uefi](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-uefi.html) | 產生單獨透過GRUB和ISO檔開機的「USB Disk」/ 「UEFI 版」 |
-| [GRUB Boot ISO](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-bios.html) | 產生單獨透過GRUB和ISO檔開機的「USB Disk」/ 「BIOS 版」 |
+| [Create Live Usb Disk for Bios](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-bios.html) | 產生單獨透過GRUB和ISO檔開機的「USB Disk」/ 「BIOS 版」 |
