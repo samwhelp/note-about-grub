@@ -138,11 +138,21 @@ mod_main_install_for_uefi () {
 
 mod_main_install_for_uefi_prepare () {
 
-	#sudo apt-get install grub-efi-amd64-bin grub-efi-ia32-bin
+	##
+	## /usr/lib/grub/x86_64-efi
+	##
 
 	sudo apt-get install grub-efi-amd64-bin
 
+
+	##
+	## /usr/lib/grub/i386-efi
+	##
+
 	#sudo apt-get install grub-efi-ia32-bin
+
+
+	#sudo apt-get install grub-efi-amd64-bin grub-efi-ia32-bin
 
 	return 0
 }

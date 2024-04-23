@@ -129,9 +129,24 @@ live_usb_disk_for_bios_main_install () {
 
 mod_main_install_for_bios () {
 
+	mod_main_install_for_bios_prepare
+
 	mod_main_install_for_bios_mount
 
 	mod_main_install_for_bios_grub_install
+
+	return 0
+
+}
+
+mod_main_install_for_bios_prepare () {
+
+	##
+	## /usr/lib/grub/i386-pc/
+	##
+
+	sudo apt-get install grub-pc-bin
+
 
 	return 0
 
