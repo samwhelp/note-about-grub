@@ -8,7 +8,7 @@ has_children: true
 # 如何
 
 * [外觀](#外觀)
-* [Boot ISO](#boot-iSO)
+* [Boot ISO](#boot-iso)
 
 
 ## 外觀
