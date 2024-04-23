@@ -14,7 +14,17 @@ grand_parent: 如何
 
 ## 主題
 
+* [相關議題](#相關議題)
 * [參考文章](#參考文章)
+
+
+
+
+## 相關議題
+
+| 相關議題 |
+| --- |
+| [Create Live Usb Disk for Bios](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-bios.html) |
 
 
 
