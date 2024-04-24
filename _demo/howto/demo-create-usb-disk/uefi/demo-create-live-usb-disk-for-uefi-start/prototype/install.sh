@@ -20,7 +20,7 @@
 ### Head: Init
 ##
 
-#set -e
+set -e
 
 THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "${0}")" ; pwd)"
 #THE_INIT_DIR_PATH="${THE_BASE_DIR_PATH}/helper/ext"
@@ -207,14 +207,36 @@ mod_main_install_for_uefi_prepare () {
 	return 0
 }
 
+mod_main_install_for_uefi_umount_mnt () {
+
+	if sudo umount ./mnt; then
+		return 0
+	fi
+
+
+	return 0
+
+}
+
+mod_main_install_for_uefi_umount_dev () {
+
+	if sudo umount /dev/sdc1; then
+		return 0
+	fi
+
+
+	return 0
+
+}
+
 mod_main_install_for_uefi_mount () {
 
 
 	mkdir -p ./mnt
 
-	sudo umount ./mnt
+	mod_main_install_for_uefi_umount_mnt
 
-	sudo umount /dev/sdc1
+	mod_main_install_for_uefi_umount_dev
 
 	sudo mount /dev/sdc1 ./mnt
 
