@@ -27,7 +27,9 @@ grand_parent: 如何
 
 ## 完整腳本範例
 
-* [demo-create-live-usb-disk-for-bios-start](https://github.com/samwhelp/note-about-grub/tree/gh-pages/_demo/howto/demo-create-usb-disk/bios/demo-create-live-usb-disk-for-bios-start/prototype)
+| 範例 |
+| --- |
+| [demo-create-live-usb-disk-for-bios-start](https://github.com/samwhelp/note-about-grub/tree/gh-pages/_demo/howto/demo-create-usb-disk/bios/demo-create-live-usb-disk-for-bios-start/prototype) |
 
 
 
