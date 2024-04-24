@@ -22,6 +22,7 @@ grand_parent: 如何
 * [grub-install](#grub-install)
 * [產生「/boot/grub/grub.cfg」](#產生bootgrubgrubcfg)
 * [grub-theme](#grub-theme)
+* [下載ISO檔](#下載iso檔)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
 
@@ -363,6 +364,13 @@ sudo mkdir -p "mnt/EFI/grub/themes"
 sudo cp -rf "tmp/grub-theme-remix-grub-theme-darkmatter-remix/." "mnt/EFI/grub/themes/grub-theme-darkmatter-remix"
 
 ```
+
+
+
+
+## 下載ISO檔
+
+
 
 
 
