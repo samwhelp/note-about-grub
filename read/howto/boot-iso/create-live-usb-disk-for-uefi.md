@@ -21,6 +21,7 @@ grand_parent: 如何
 * [硬碟分割規格](#硬碟分割規格)
 * [硬碟分割操作](#硬碟分割操作)
 * [掛載分割區](#掛載分割區)
+* [產生「EFI/BOOT/bootx64.efi」](#產生EFI-BOOT-bootx64.efi)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
 
@@ -242,6 +243,103 @@ sudo umount /dev/sdc1
 sudo mount /dev/sdc1 ./mnt
 ```
 
+
+
+
+## 產生「EFI/BOOT/bootx64.efi」
+
+
+``` sh
+sudo mkdir -p mnt/EFI/BOOT mnt/EFI/grub
+```
+
+執行
+
+``` sh
+tree mnt
+```
+
+顯示
+
+```
+mnt/
+└── EFI
+    ├── BOOT
+    └── grub
+
+4 directories, 0 files
+```
+
+執行下面指令，將「/usr/lib/grub/x86_64-efi」這個資料夾內的所有檔案，複製到「mnt/EFI/grub/x86_64-efi」這個資料夾。
+
+``` sh
+sudo cp /usr/lib/grub/x86_64-efi/. mnt/EFI/grub/x86_64-efi -rf
+````
+
+若是沒有「/usr/lib/grub/x86_64-efi」這個資料夾，請先執行下面指令安裝「[grub-efi-amd64-bin](https://packages.debian.org/bookworm/grub-efi-amd64-bin)」。
+
+``` sh
+sudo apt-get install grub-efi-amd64-bin
+```
+
+* Debian Package / grub-efi-amd64-bin / [File list](https://packages.debian.org/bookworm/amd64/grub-efi-amd64-bin/filelist)
+
+
+執行下面指令，產生「mnt/EFI/BOOT/bootx64.efi」這個檔案
+
+``` sh
+
+sudo grub-mkimage \
+	-O x86_64-efi \
+	-o mnt/EFI/BOOT/bootx64.efi \
+	-d mnt/EFI/grub/x86_64-efi \
+	-p /EFI/grub \
+		fat \
+		iso9660 \
+		part_gpt \
+		part_msdos \
+		normal \
+		boot \
+		linux \
+		linux16 \
+		configfile \
+		loopback \
+		chain \
+		efifwsetup \
+		efi_gop \
+		efi_uga \
+		ls \
+		search \
+		search_label \
+		search_fs_uuid \
+		search_fs_file \
+		gfxterm \
+		gfxterm_background \
+		gfxterm_menu \
+		test \
+		all_video \
+		loadenv \
+		exfat \
+		ext2 \
+		ntfs \
+		btrfs \
+		hfsplus \
+		udf \
+		cat
+
+```
+
+執行
+
+``` sh
+file mnt/EFI/BOOT/bootx64.efi
+```
+
+顯示
+
+```
+mnt/EFI/BOOT/bootx64.efi: PE32+ executable (EFI application) x86-64 (stripped to external PDB), for MS Windows, 4 sections
+```
 
 
 
