@@ -15,6 +15,8 @@ grand_parent: 如何
 ## 主題
 
 * [緣起](#緣起)
+* [操作環境](#操作環境)
+* [操作背景](#操作背景)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
 
@@ -27,7 +29,7 @@ grand_parent: 如何
 
 1. [透過「dd」](https://samwhelp.github.io/note-about-debian/read/core/iso/boot-iso/boot-iso-by-usb.html)
 2. [透過「Ventoy」](https://samwhelp.github.io/note-about-ventoy/#%E5%85%A5%E9%96%80)
-3. [透過既有的系統，撰寫「GRUB Menu Entry」(https://samwhelp.github.io/note-about-grub/read/howto/boot_iso.html)
+3. [透過既有的系統，撰寫「GRUB Menu Entry」](https://samwhelp.github.io/note-about-grub/read/howto/boot_iso.html)
 來「Boot ISO」
 
 一直以來想要去嘗試第四種方式，來「Boot ISO」
@@ -66,6 +68,28 @@ sudo grub-install --version
 ```
 grub-install (GRUB) 2.06-13+deb12u1
 ````
+
+
+
+
+## 操作背景
+
+我操作的機器是「筆電」，有在筆電內建的硬碟安裝「Linux」，
+
+並且完全沒有「Windows」系統。
+
+內建硬碟的「Device ID」是「**/dev/sda**」。
+
+而我最近都是安裝不同的「Linux」系統，到外接的「USB Disk」。
+
+然後使用外接的「USB Disk」來開機。
+
+我是使用傳統的「BIOS模式」來開機，並不是使用「UEFI模式」來開機。
+
+開機的「USB Disk」的「Device ID」是「**/dev/sdb**」。
+
+而此篇所要產生的「ｌive USB Disk」的「Device ID」則是「**/dev/sdc**」。
+
 
 
 
