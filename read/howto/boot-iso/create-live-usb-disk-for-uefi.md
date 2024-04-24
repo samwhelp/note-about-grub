@@ -21,7 +21,9 @@ grand_parent: 如何
 * [硬碟分割規格](#硬碟分割規格)
 * [硬碟分割操作](#硬碟分割操作)
 * [掛載分割區](#掛載分割區)
-* [產生「EFI/BOOT/bootx64.efi」](#產生efibootbootx64efi)
+* [產生「/EFI/BOOT/bootx64.efi」](#產生efibootbootx64efi)
+* [grub-install](#grub-install)
+* [產生「/EFI/grub/grub.cfg」](#產生efibootbootx64efi)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
 
@@ -248,7 +250,7 @@ sudo mount /dev/sdc1 ./mnt
 
 
 
-## 產生「EFI/BOOT/bootx64.efi」
+## 產生「/EFI/BOOT/bootx64.efi」
 
 
 ``` sh
@@ -343,6 +345,127 @@ file mnt/EFI/BOOT/bootx64.efi
 mnt/EFI/BOOT/bootx64.efi: PE32+ executable (EFI application) x86-64 (stripped to external PDB), for MS Windows, 4 sections
 ```
 
+
+
+
+## grub-install
+
+> 接下來我們要手動補足「grub」開機時，我們有可能會用到的檔案。
+
+``` sh
+sudo cp /boot/grub/fonts/. mnt/EFI/grub/fonts -rf
+
+sudo cp /boot/grub/locale/. mnt/EFI/grub/locale -rf
+```
+
+
+
+
+## 產生「/EFI/grub/grub.cfg」
+
+產生「/EFI/grub/grub.cfg」這個關鍵的設定檔，內容類似如下
+
+``` sh
+
+set pager=1
+
+
+
+
+##
+## ## Load Module
+##
+
+insmod all_video
+insmod video_bochs
+insmod video_cirrus
+insmod font
+insmod gfxterm
+insmod gfxmenu
+insmod gettext
+insmod jpeg
+insmod png
+
+
+
+
+##
+## ## Locale
+##
+
+loadfont ($root)/EFI/grub/fonts/unicode.pf2
+set locale_dir=($root)/EFI/grub/locale
+set lang=zh_TW
+
+
+
+
+##
+## Resolution
+##
+
+set gfxmode=auto
+terminal_output gfxterm
+
+
+
+
+##
+## ## Theme
+##
+
+background_image ($root)/EFI/grub/themes/grub-theme-darkmatter-remix/background.jpg
+set theme=($root)/EFI/grub/themes/grub-theme-darkmatter-remix/theme.txt
+export theme
+
+
+
+
+##
+## ## Countdown
+##
+
+set timeout=5
+
+
+
+
+##
+## ## Color
+##
+
+set color_normal=white/black
+set color_highlight=white/cyan
+
+
+
+
+##
+## ## Grub Menu Entry
+##
+
+menuentry "Debian 12 ISO / Xfce" --class Debian {
+	set iso_file="/iso/debian-live-12.5.0-amd64-xfce.iso"
+	search --set=iso_partition --no-floppy --file $iso_file
+	probe --set=iso_partition_uuid --fs-uuid $iso_partition
+	set img_dev="/dev/disk/by-uuid/$iso_partition_uuid"
+	loopback loop ($iso_partition)$iso_file
+	set boot_option=""
+	#set boot_option="components splash quiet"
+	#set boot_option="components locales=zh_TW.UTF-8 quiet splash"
+	linux (loop)/live/vmlinuz boot=live buuid=$iso_partition_uuid findiso=$iso_file $boot_option
+	initrd (loop)/live/initrd.img
+}
+
+
+menuentry "Fedora 40 Beta ISO / Kde Plasma" {
+	set iso_file=/iso/Fedora-KDE-Live-x86_64-40_Beta-1.10.iso
+	loopback loop $iso_file
+	linux (loop)/images/pxeboot/vmlinuz iso-scan/filename=$iso_file root=live:CDLABEL=Fedora-KDE-Live-40_B-1-10 rd.live.image rhgb $boot_option
+	initrd (loop)/images/pxeboot/initrd.img
+}
+
+```
 
 
 ## 相關議題
