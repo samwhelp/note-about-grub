@@ -196,11 +196,13 @@ sudo mount /dev/sdc2 ./mnt
 執行
 
 ``` sh
+
 sudo grub-install \
-	--boot-directory=mnt/boot \
-	--target=i386-pc \
-	--fonts=unicode \
+	--boot-directory="mnt/boot" \
+	--target="i386-pc" \
+	--fonts="unicode" \
 	/dev/sdc
+
 ```
 
 

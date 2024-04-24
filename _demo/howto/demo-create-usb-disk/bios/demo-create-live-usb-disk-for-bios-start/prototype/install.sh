@@ -220,9 +220,9 @@ mod_main_install_for_bios_grub_install () {
 
 
 	sudo grub-install \
-		--boot-directory=mnt/boot \
-		--target=i386-pc \
-		--fonts=unicode \
+		--boot-directory="mnt/boot" \
+		--target="i386-pc" \
+		--fonts="unicode" \
 		/dev/sdc
 
 
