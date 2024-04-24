@@ -107,6 +107,39 @@ is_not_debug () {
 
 
 ################################################################################
+### Head: Model / mod_main_install_for_uefi_umount
+##
+
+mod_main_install_for_uefi_umount_mnt () {
+
+	if sudo umount ./mnt; then
+		return 0
+	fi
+
+
+	return 0
+
+}
+
+mod_main_install_for_uefi_umount_dev () {
+
+	if sudo umount /dev/sdc*; then
+		return 0
+	fi
+
+
+	return 0
+
+}
+
+##
+### Tail: Model / mod_main_install_for_uefi_umount
+################################################################################
+
+
+
+
+################################################################################
 ### Head: Model / live_usb_disk_for_uefi_partition_create
 ##
 
@@ -118,6 +151,7 @@ live_usb_disk_for_uefi_partition_create () {
 	util_error_echo "##"
 	util_error_echo
 
+	mod_main_install_for_uefi_umount_dev
 
 	mod_partition_create_for_uefi "/dev/sdc"
 

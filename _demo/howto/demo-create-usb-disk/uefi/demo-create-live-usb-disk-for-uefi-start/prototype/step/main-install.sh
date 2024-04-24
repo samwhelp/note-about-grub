@@ -107,6 +107,39 @@ is_not_debug () {
 
 
 ################################################################################
+### Head: Model / mod_main_install_for_uefi_umount
+##
+
+mod_main_install_for_uefi_umount_mnt () {
+
+	if sudo umount ./mnt; then
+		return 0
+	fi
+
+
+	return 0
+
+}
+
+mod_main_install_for_uefi_umount_dev () {
+
+	if sudo umount /dev/sdc*; then
+		return 0
+	fi
+
+
+	return 0
+
+}
+
+##
+### Tail: Model / mod_main_install_for_uefi_umount
+################################################################################
+
+
+
+
+################################################################################
 ### Head: Model / live_usb_disk_for_uefi_main_install
 ##
 
@@ -155,28 +188,6 @@ mod_main_install_for_uefi_prepare () {
 	#sudo apt-get install grub-efi-amd64-bin grub-efi-ia32-bin
 
 	return 0
-}
-
-mod_main_install_for_uefi_umount_mnt () {
-
-	if sudo umount ./mnt; then
-		return 0
-	fi
-
-
-	return 0
-
-}
-
-mod_main_install_for_uefi_umount_dev () {
-
-	if sudo umount /dev/sdc*; then
-		return 0
-	fi
-
-
-	return 0
-
 }
 
 mod_main_install_for_uefi_mount () {
