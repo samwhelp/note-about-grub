@@ -20,7 +20,7 @@
 ### Head: Init
 ##
 
-#set -e
+set -e
 
 THE_BASE_DIR_PATH="$(cd -- "$(dirname -- "${0}")" ; pwd)"
 #THE_INIT_DIR_PATH="${THE_BASE_DIR_PATH}/helper/ext"
@@ -109,6 +109,39 @@ is_not_debug () {
 
 
 ################################################################################
+### Head: Model / mod_main_install_for_bios_umount
+##
+
+mod_main_install_for_bios_umount_mnt () {
+
+	if sudo umount ./mnt; then
+		return 0
+	fi
+
+
+	return 0
+
+}
+
+mod_main_install_for_bios_umount_dev () {
+
+	if sudo umount /dev/sdc*; then
+		return 0
+	fi
+
+
+	return 0
+
+}
+
+##
+### Tail: Model / mod_main_install_for_bios_umount
+################################################################################
+
+
+
+
+################################################################################
 ### Head: Model / live_usb_disk_for_bios_main_install
 ##
 
@@ -157,9 +190,9 @@ mod_main_install_for_bios_mount () {
 
 	mkdir -p ./mnt
 
-	sudo umount ./mnt
+	mod_main_install_for_bios_umount_mnt
 
-	sudo umount /dev/sdc2
+	mod_main_install_for_bios_umount_mnt
 
 	sudo mount /dev/sdc2 ./mnt
 
