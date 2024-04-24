@@ -211,5 +211,5 @@ sudo partprobe /dev/sdc
 * G. T. Wang / [Linux 的 Parted 指令教學：建立、變更與修復磁碟分割區](https://blog.gtwang.org/linux/parted-command-to-create-resize-rescue-linux-disk-partitions/)
 * Arch Wiki / [Parted](https://wiki.archlinux.org/title/Parted)
 * Arch Wiki / [wipefs](https://wiki.archlinux.org/title/Device_file#wipefs)
-* Arch Wiki / [EFI system partition](https://wiki.archlinux.org/title/EFI_system_partition)
 * Arch Wiki / GRUB / [UEFI systems](https://wiki.archlinux.org/title/GRUB#UEFI_systems)
+* Arch Wiki / [EFI system partition](https://wiki.archlinux.org/title/EFI_system_partition)
