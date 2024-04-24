@@ -100,13 +100,20 @@ grub-install (GRUB) 2.06-13+deb12u1
 | Type | ID        | File system | Flags | 用途                          |
 | ---- | --------- | ----------- | ----- | ---------------------------- |
 | Disk | /dev/sdc  |             |       |                              |
-| Part | /dev/sdc1 | `fat32`     | `esp` | 用來當作「EFI」開機的「分割區」   |
+| Part | /dev/sdc1 | `fat32`     | `esp` | 用來當作「EFI」開機的「分割區」， ISO檔案也會放在這個「分割區」 |
 
 
-> 為了講解時的單純化，所以我們只將整個「Disk」分割出「一個分割區」，用來當作「EFI」開機的「分割區」。
+> 為了講解時的單純化，所以我們只有簡單地將整個「Disk」分割出「一個分割區」，用來當作「EFI」開機的「分割區」。
 
 
 ## 硬碟分割操作
+
+執行下面指令，先將「/dev/sdc*」的一些「`signature`」清除。
+
+``` sh
+sudo wipefs -a /dev/sdc*
+```
+
 
 執行下面指令，來「分割硬碟」。
 
@@ -133,7 +140,7 @@ Number  Start   End    Size   File system  Name     Flags
  1      1049kB  124GB  124GB               primary  boot, esp
 ```
 
-執行下面指令，來將「`/dev/sdc1`」格式化「fat32」。
+執行下面指令，來將「`/dev/sdc1`」格式化成「`fat32`」。
 
 ``` sh
 sudo mkfs.fat -F 32 -n LIVEUEFI "/dev/sdc1"
