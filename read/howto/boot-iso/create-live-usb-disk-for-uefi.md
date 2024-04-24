@@ -46,7 +46,7 @@ grand_parent: 如何
 
 以下就是紀錄相關的操作步驟。
 
-有兩種版本，本篇是「UEFI版」，另一篇是「[BIOS版](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-bios.html)」。
+有兩種版本，本篇是「**UEFI版**」，另一篇是「[BIOS版](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-bios.html)」。
 
 
 
