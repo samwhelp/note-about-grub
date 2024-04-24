@@ -337,6 +337,12 @@ search --no-floppy --fs-uuid --set=root df327def-4e94-4b5e-b7d9-d17b8323571d
 記得要將「`df327def-4e94-4b5e-b7d9-d17b8323571d`」改成您當下「/dev/sdc2」的「UUID」
 
 
+可以執行下面指令，獲得「/dev/sdc2」的「UUID」。
+
+``` sh
+sudo blkid /dev/sdc2 | sed 's|\ |\n|g' | grep '^UUID=' | awk -F '"' '{print$2}'
+````
+
 
 
 ## grub-theme
