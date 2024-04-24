@@ -24,6 +24,7 @@ grand_parent: 如何
 * [產生「/EFI/BOOT/bootx64.efi」](#產生efibootbootx64efi)
 * [grub-install](#grub-install)
 * [產生「/EFI/grub/grub.cfg」](#產生efigrubgrubcfg)
+* [grub-theme](#grub-theme)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
 
@@ -466,6 +467,36 @@ menuentry "Fedora 40 Beta ISO / Kde Plasma" {
 }
 
 ```
+
+
+
+## grub-theme
+
+``` sh
+set theme=($root)/EFI/grub/themes/grub-theme-darkmatter-remix/theme.txt
+```
+
+上面的設定，我是採用「[grub-theme-darkmatter-remix](https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-darkmatter-remix)」。
+
+
+所以執行下面的指令，下載下來，並且解壓縮，放置到「mnt/EFI/grub/themes/grub-theme-darkmatter-remix」這個路徑。
+
+``` sh
+
+mkdir -p tmp
+
+
+wget -c "https://github.com/samwhelp/grub-theme-remix/archive/refs/heads/grub-theme-darkmatter-remix.tar.gz" -O "tmp/grub-theme-remix-grub-theme-darkmatter-remix.tar.gz"
+
+tar xf "tmp/grub-theme-remix-grub-theme-darkmatter-remix.tar.gz" -C "tmp"
+
+sudo mkdir -p "mnt/EFI/grub/themes"
+
+sudo cp -rf "tmp/grub-theme-remix-grub-theme-darkmatter-remix/." "mnt/EFI/grub/themes/grub-theme-darkmatter-remix"
+
+```
+
+
 
 
 ## 相關議題
