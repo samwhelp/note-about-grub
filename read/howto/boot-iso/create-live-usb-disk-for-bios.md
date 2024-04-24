@@ -14,10 +14,22 @@ grand_parent: 如何
 
 ## 主題
 
+* [承起](#承起)
 * [硬碟分割規格](#硬碟分割規格)
 * [硬碟分割操作](#硬碟分割操作)
+* [掛載分割區](#掛載分割區)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
+
+
+
+
+## 承起
+
+承起「[Create Live Usb Disk for Uefi](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-uefi.html)」該篇提到的概念，
+
+這篇要會回過頭來紀錄「BIOS版」的操作步驟。
+
 
 
 
@@ -133,6 +145,11 @@ sudo blkid /dev/sdc2
 ``` sh
 sudo blkid /dev/sdc*
 ```
+
+
+
+
+## 掛載分割區
 
 
 
