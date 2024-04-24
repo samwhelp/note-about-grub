@@ -23,7 +23,7 @@ grand_parent: 如何
 
 ## 硬碟分割規格
 
-| Type | ID        | File system | Flags       | 用途                          |
+| Type | Device ID | File System | Flags       | 用途                          |
 | ---- | --------- | ----------- | ----------- | ---------------------------- |
 | Disk | /dev/sdc  |             |             |                              |
 | Part | /dev/sdc1 |             | `bios_grub` | 要採用傳統「BIOS」模式開機，Grub 有一部分的「開機Image」，會被安裝在這個「分割區」。   |

@@ -97,7 +97,7 @@ grub-install (GRUB) 2.06-13+deb12u1
 
 ## 硬碟分割規格
 
-| Type | ID        | File system | Flags | 用途                          |
+| Type | Device ID | File System | Flags | 用途                          |
 | ---- | --------- | ----------- | ----- | ---------------------------- |
 | Disk | /dev/sdc  |             |       |                              |
 | Part | /dev/sdc1 | `fat32`     | `esp` | 用來當作「EFI」開機的「分割區」， ISO檔案也會放在這個「分割區」 |
