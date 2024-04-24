@@ -244,7 +244,7 @@ mod_main_install_for_bios_mount () {
 
 	mod_main_install_for_bios_umount_mnt
 
-	mod_main_install_for_bios_umount_mnt
+	mod_main_install_for_bios_umount_dev
 
 	sudo mount /dev/sdc2 ./mnt
 
