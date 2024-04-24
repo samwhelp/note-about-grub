@@ -131,11 +131,16 @@ mod_partition_create_for_uefi () {
 
 	local part_uefi="${disk_target}1"
 
+
+	sudo wipefs -a "${disk_target}"*
+
+
 	sudo parted --script -- "${disk_target}" \
 		mktable gpt \
 		mkpart primary '0%' '100%' \
 		set 1 esp on \
 		print
+
 
 	sudo mkfs.fat -F 32 -n LIVEUEFI "${part_uefi}"
 

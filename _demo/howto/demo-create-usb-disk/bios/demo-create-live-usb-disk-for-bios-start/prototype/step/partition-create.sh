@@ -132,12 +132,17 @@ mod_partition_create_for_bios () {
 
 	local part_uefi="${disk_target}2"
 
+
+	sudo wipefs -a "${disk_target}"*
+
+
 	sudo parted --script -- "${disk_target}" \
 		mktable gpt \
 		mkpart primary '0%' '2M' \
 		mkpart primary '2M' '100%' \
 		set 1 bios_grub on \
 		print
+
 
 	sudo mkfs.ext4 -L LIVEBIOS "${part_uefi}"
 
