@@ -21,6 +21,7 @@ grand_parent: 如何
 * [掛載分割區](#掛載分割區)
 * [grub-install](#grub-install)
 * [產生「/boot/grub/grub.cfg」](#產生bootgrubgrubcfg)
+* [grub-theme](#grub-theme)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
 
@@ -333,6 +334,35 @@ search --no-floppy --fs-uuid --set=root df327def-4e94-4b5e-b7d9-d17b8323571d
 ```
 
 記得要將「`df327def-4e94-4b5e-b7d9-d17b8323571d`」改成您當下「/dev/sdc2」的「UUID」
+
+
+
+
+## grub-theme
+
+``` sh
+set theme=($root)/EFI/grub/themes/grub-theme-darkmatter-remix/theme.txt
+```
+
+上面的設定，我是採用「[grub-theme-darkmatter-remix](https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-darkmatter-remix)」。
+
+
+所以執行下面的指令，下載下來，並且解壓縮，放置到「mnt/EFI/grub/themes/grub-theme-darkmatter-remix」這個路徑。
+
+``` sh
+
+mkdir -p tmp
+
+
+wget -c "https://github.com/samwhelp/grub-theme-remix/archive/refs/heads/grub-theme-darkmatter-remix.tar.gz" -O "tmp/grub-theme-remix-grub-theme-darkmatter-remix.tar.gz"
+
+tar xf "tmp/grub-theme-remix-grub-theme-darkmatter-remix.tar.gz" -C "tmp"
+
+sudo mkdir -p "mnt/EFI/grub/themes"
+
+sudo cp -rf "tmp/grub-theme-remix-grub-theme-darkmatter-remix/." "mnt/EFI/grub/themes/grub-theme-darkmatter-remix"
+
+```
 
 
 

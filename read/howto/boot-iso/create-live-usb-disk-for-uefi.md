@@ -470,6 +470,7 @@ menuentry "Fedora 40 Beta ISO / Kde Plasma" {
 
 
 
+
 ## grub-theme
 
 ``` sh
