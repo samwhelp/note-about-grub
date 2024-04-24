@@ -21,7 +21,7 @@ grand_parent: 如何
 * [硬碟分割規格](#硬碟分割規格)
 * [硬碟分割操作](#硬碟分割操作)
 * [掛載分割區](#掛載分割區)
-* [產生「EFI/BOOT/bootx64.efi」](#產生EFI-BOOT-bootx64.efi)
+* [產生「EFI/BOOT/bootx64.efi」](#產生efibootbootx64efi)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
 
