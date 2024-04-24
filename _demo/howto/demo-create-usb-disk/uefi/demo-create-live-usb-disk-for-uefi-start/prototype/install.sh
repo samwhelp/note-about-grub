@@ -226,18 +226,18 @@ mod_main_install_for_uefi_mount () {
 mod_main_install_for_uefi_uefi_boot_image_create () {
 
 
-	cd ./mnt
+	sudo mkdir -p mnt/EFI/BOOT mnt/EFI/grub
 
-	sudo mkdir -p EFI/BOOT EFI/grub
 
-	sudo cp /usr/lib/grub/x86_64-efi/. EFI/grub/x86_64-efi -rf
+	sudo cp /usr/lib/grub/x86_64-efi/. mnt/EFI/grub/x86_64-efi -rf
+
 
 
 
 	sudo grub-mkimage \
 		-O x86_64-efi \
-		-o EFI/BOOT/bootx64.efi \
-		-d /usr/lib/grub/x86_64-efi \
+		-o mnt/EFI/BOOT/bootx64.efi \
+		-d mnt/EFI/grub/x86_64-efi \
 		-p /EFI/grub \
 			fat \
 			iso9660 \
@@ -273,7 +273,7 @@ mod_main_install_for_uefi_uefi_boot_image_create () {
 			cat
 
 
-	cd "${OLDPWD}"
+
 
 	return 0
 
