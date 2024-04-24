@@ -296,10 +296,10 @@ sudo apt-get install grub-efi-amd64-bin
 ``` sh
 
 sudo grub-mkimage \
-	-O x86_64-efi \
-	-o mnt/EFI/BOOT/bootx64.efi \
-	-d mnt/EFI/grub/x86_64-efi \
-	-p /EFI/grub \
+	--format="x86_64-efi" \
+	--output="mnt/EFI/BOOT/bootx64.efi" \
+	--directory="mnt/EFI/grub/x86_64-efi" \
+	--prefix="/EFI/grub" \
 		fat \
 		iso9660 \
 		part_gpt \

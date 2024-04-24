@@ -207,10 +207,10 @@ mod_main_install_for_uefi_uefi_boot_image_create () {
 
 
 	sudo grub-mkimage \
-		-O x86_64-efi \
-		-o mnt/EFI/BOOT/bootx64.efi \
-		-d mnt/EFI/grub/x86_64-efi \
-		-p /EFI/grub \
+		--format="x86_64-efi" \
+		--output="mnt/EFI/BOOT/bootx64.efi" \
+		--directory="mnt/EFI/grub/x86_64-efi" \
+		--prefix="/EFI/grub" \
 			fat \
 			iso9660 \
 			part_gpt \
