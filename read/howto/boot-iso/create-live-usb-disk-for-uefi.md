@@ -17,6 +17,8 @@ grand_parent: 如何
 * [緣起](#緣起)
 * [操作環境](#操作環境)
 * [操作背景](#操作背景)
+* [硬碟分割規格](#硬碟分割規格)
+* [硬碟分割操作](#硬碟分割操作)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
 
@@ -89,6 +91,96 @@ grub-install (GRUB) 2.06-13+deb12u1
 開機的「USB Disk」的「Device ID」是「**/dev/sdb**」。
 
 而此篇所要產生的「ｌive USB Disk」的「Device ID」則是「**/dev/sdc**」。
+
+
+
+
+## 硬碟分割規格
+
+| Type | ID        | File system | Flags | 用途                          |
+| ---- | --------- | ----------- | ----- | ---------------------------- |
+| Disk | /dev/sdc  |             |       |                              |
+| Part | /dev/sdc1 | `fat32`     | `esp` | 用來當作「EFI」開機的「分割區」   |
+
+
+## 硬碟分割操作
+
+執行下面指令，來「分割硬碟」。
+
+``` sh
+
+sudo parted --script -- "/dev/sdc" \
+	mktable gpt \
+	mkpart primary '0%' '100%' \
+	set 1 esp on \
+	print
+
+```
+
+顯示
+
+```
+Model: Kingston DataTraveler 3.0 (scsi)
+Disk /dev/sdc: 124GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags:
+
+Number  Start   End    Size   File system  Name     Flags
+ 1      1049kB  124GB  124GB               primary  boot, esp
+```
+
+執行下面指令，來將「`/dev/sdc1`」格式化「fat32」。
+
+``` sh
+sudo mkfs.fat -F 32 -n LIVEUEFI "/dev/sdc1"
+```
+
+執行下面指令，觀看「/dev/sdc」的分割資訊。
+
+``` sh
+sudo parted /dev/sdc print
+```
+
+顯示
+
+```
+Model: Kingston DataTraveler 3.0 (scsi)
+Disk /dev/sdc: 124GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags:
+
+Number  Start   End    Size   File system  Name     Flags
+ 1      1049kB  124GB  124GB  fat32        primary  boot, esp
+```
+
+或是執行下面指令，觀看「/dev/sdc」的分割資訊。包含「Free Space」也會顯示出來。
+
+``` sh
+sudo parted /dev/sdc print free
+```
+
+顯示
+
+```
+Model: Kingston DataTraveler 3.0 (scsi)
+Disk /dev/sdc: 124GB
+Sector size (logical/physical): 512B/512B
+Partition Table: gpt
+Disk Flags:
+
+Number  Start   End     Size    File system  Name     Flags
+        17.4kB  1049kB  1031kB  Free Space
+ 1      1049kB  124GB   124GB   fat32        primary  boot, esp
+        124GB   124GB   1032kB  Free Space
+```
+
+若要「重新讀取裝置的 Partition Table」，可以執行下面指令
+
+``` sh
+sudo partprobe /dev/sdc
+```
 
 
 

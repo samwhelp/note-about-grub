@@ -133,7 +133,7 @@ mod_partition_create_for_uefi () {
 
 	sudo parted --script -- "${disk_target}" \
 		mktable gpt \
-		mkpart primary "0%" '100%' \
+		mkpart primary '0%' '100%' \
 		set 1 esp on \
 		print
 
