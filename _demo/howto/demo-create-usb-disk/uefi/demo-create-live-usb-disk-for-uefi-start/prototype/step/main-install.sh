@@ -170,7 +170,7 @@ mod_main_install_for_uefi_umount_mnt () {
 
 mod_main_install_for_uefi_umount_dev () {
 
-	if sudo umount /dev/sdc1; then
+	if sudo umount /dev/sdc*; then
 		return 0
 	fi
 

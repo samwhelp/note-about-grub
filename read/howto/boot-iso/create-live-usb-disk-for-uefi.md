@@ -231,22 +231,31 @@ sudo blkid /dev/sdc*
 mkdir -p ./mnt
 ```
 
-執行下面指令，確保「mnt」這個資料夾沒有掛載分割區。
+執行下面指令，將「/dev/sdc1」掛載到「mnt」。
+
+``` sh
+sudo mount /dev/sdc1 ./mnt
+```
+
+
+> 卸載的參考指令
+
+假設「mnt」這個資料夾有掛載分割區，執行下面指令，卸載「mnt」這個資料夾所掛載分割區。
 
 ``` sh
 sudo umount ./mnt
 ```
 
-執行下面指令，確保「/dev/sdc1」沒有被掛載。
+假設「/dev/sdc1」有被掛載，執行下面指令，卸載「/dev/sdc1」。
 
 ``` sh
 sudo umount /dev/sdc1
 ```
 
-執行下面指令，將「/dev/sdc1」掛載到「mnt」。
+或是執行下面指令，確保「/dev/sdc*」都被卸載。
 
 ``` sh
-sudo mount /dev/sdc1 ./mnt
+sudo umount /dev/sdc*
 ```
 
 
