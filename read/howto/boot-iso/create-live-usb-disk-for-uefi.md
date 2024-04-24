@@ -192,6 +192,18 @@ Number  Start   End     Size    File system  Name     Flags
 sudo partprobe /dev/sdc
 ```
 
+若是要觀看「/dev/sdc2」的一些「Lable」或「UUID」，可以執行下面指令
+
+``` sh
+sudo blkid /dev/sdc2
+```
+
+若是要觀看「/dev/sdc*」的一些「Lable」或「UUID」，可以執行下面指令
+
+``` sh
+sudo blkid /dev/sdc*
+```
+
 
 
 
