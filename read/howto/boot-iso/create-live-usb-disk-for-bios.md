@@ -151,6 +151,30 @@ sudo blkid /dev/sdc*
 
 ## 掛載分割區
 
+執行下面指令，產生「mnt」這個「資料夾」。
+
+``` sh
+mkdir -p ./mnt
+```
+
+執行下面指令，確保「mnt」這個資料夾沒有掛載分割區。
+
+``` sh
+sudo umount ./mnt
+```
+
+執行下面指令，確保「/dev/sdc2」沒有被掛載。
+
+``` sh
+sudo umount /dev/sdc2
+```
+
+執行下面指令，將「/dev/sdc2」掛載到「mnt」。
+
+``` sh
+sudo mount /dev/sdc2 ./mnt
+```
+
 
 
 
