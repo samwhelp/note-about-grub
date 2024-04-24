@@ -14,6 +14,7 @@ grand_parent: 如何
 
 ## 主題
 
+* [完整腳本範例](#完整腳本範例)
 * [緣起](#緣起)
 * [操作環境](#操作環境)
 * [操作背景](#操作背景)
@@ -22,6 +23,13 @@ grand_parent: 如何
 * [掛載分割區](#掛載分割區)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
+
+
+
+
+## 完整腳本範例
+
+* [demo-create-live-usb-disk-for-uefi-start](https://github.com/samwhelp/note-about-grub/tree/gh-pages/_demo/howto/demo-create-usb-disk/uefi/demo-create-live-usb-disk-for-uefi-start/prototype)
 
 
 

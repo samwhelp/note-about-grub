@@ -14,6 +14,7 @@ grand_parent: 如何
 
 ## 主題
 
+* [完整腳本範例](#完整腳本範例)
 * [承起](#承起)
 * [硬碟分割規格](#硬碟分割規格)
 * [硬碟分割操作](#硬碟分割操作)
@@ -24,12 +25,18 @@ grand_parent: 如何
 
 
 
+## 完整腳本範例
+
+* [demo-create-live-usb-disk-for-bios-start](https://github.com/samwhelp/note-about-grub/tree/gh-pages/_demo/howto/demo-create-usb-disk/bios/demo-create-live-usb-disk-for-bios-start/prototype)
+
+
+
+
 ## 承起
 
 承起「[Create Live Usb Disk for Uefi](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-uefi.html)」該篇提到的概念，
 
 這篇要會回過頭來紀錄「BIOS版」的操作步驟。
-
 
 
 
