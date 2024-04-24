@@ -23,7 +23,7 @@ grand_parent: 如何
 * [掛載分割區](#掛載分割區)
 * [產生「/EFI/BOOT/bootx64.efi」](#產生efibootbootx64efi)
 * [grub-install](#grub-install)
-* [產生「/EFI/grub/grub.cfg」](#產生efibootbootx64efi)
+* [產生「/EFI/grub/grub.cfg」](#產生efigrubgrubcfg)
 * [相關議題](#相關議題)
 * [參考文章](#參考文章)
 
