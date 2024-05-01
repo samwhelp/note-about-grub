@@ -1,6 +1,6 @@
 ---
 title: Use Background Image
-nav_order: 7010
+nav_order: 7020
 has_children: false
 parent: 如何
 ---
@@ -276,7 +276,7 @@ sudo mkdir -p /boot/grub/themes/poly-dark
 執行下面指令，複製上面的「GRUB 佈景主題」到「/boot/grub/themes/poly-dark/」這個資料夾。
 
 ``` sh
-sudo cp -v -a poly-dark/* /boot/grub/themes/poly-dark/
+sudo cp -rf poly-dark/. /boot/grub/themes/poly-dark
 ```
 
 

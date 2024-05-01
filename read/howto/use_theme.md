@@ -1,6 +1,6 @@
 ---
 title: Use Theme
-nav_order: 7020
+nav_order: 7010
 has_children: false
 parent: 如何
 ---
@@ -63,7 +63,7 @@ git clone https://github.com/zshzero/dracula-grub2.git dracula
 執行下面指令，複製到「/boot/grub/themes/dracula」這個路徑
 
 ``` sh
-sudo cp -a dracula /boot/grub/themes/dracula
+sudo cp -rf dracula/. /boot/grub/themes/dracula
 ```
 
 以上就已經安裝完成了。
