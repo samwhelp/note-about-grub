@@ -81,9 +81,13 @@
 
 
 
-## 相關收藏
+## Grub Theme Adjustment
 
-* [theme-collections-grub](https://github.com/samwhelp/theme-collections-grub)
+| Grub Theme Adjustment |
+| --- |
+| [grub-theme-refactoring](https://github.com/samwhelp/grub-theme-refactoring) |
+| [grub-theme-remix](https://github.com/samwhelp/grub-theme-remix) |
+| [theme-collections-grub](https://github.com/samwhelp/theme-collections-grub) |
 
 
 
