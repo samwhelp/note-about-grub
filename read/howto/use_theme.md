@@ -79,6 +79,8 @@ sudo cp -rf dracula/. /boot/grub/themes/dracula
 
 以上步驟，就已經安裝完成了。
 
+接著要執行「[設定採用](#設定採用)」的步驟。
+
 >　關於「`dracula/.`」，後面多後面多加了「`/.`」，這樣在複製的時候，可以確保「/boot/grub/themes/dracula」這個資料夾已經存在時，複製過去，會直接覆蓋。
 
 
