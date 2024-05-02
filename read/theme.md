@@ -32,6 +32,17 @@ has_children: false
 
 
 
+## 輔助工具
+
+| 輔助工具 | 簡介 |
+| ------ | --- |
+| [grub-theme-refactoring-select](https://samwhelp.github.io/grub-theme-refactoring-select/) | 用來輔助「安裝」和「切換」GRUB佈景主題 |
+| [grub-theme-remix-select](https://samwhelp.github.io/grub-theme-remix-select/) | 用來輔助「安裝」和「切換」GRUB佈景主題 |
+| [grub-theme-select](https://samwhelp.github.io/grub-theme-select/) | 用來輔助「安裝」和「切換」GRUB佈景主題 |
+
+
+
+
 ## Docs
 
 | Docs |
