@@ -24,8 +24,8 @@ parent: 如何
 
 | 放置路徑 |
 | ---- |
-| `/usr/share/grub/themes/` |
-| `/boot/grub/themes/` |
+| /usr/share/grub/themes/ |
+| /boot/grub/themes/ |
 
 > 上面兩個放置路徑都可以，其他路徑基本上也可以，不限定在上面兩個路徑
 
@@ -47,7 +47,7 @@ parent: 如何
 
 以下以安裝「[Dracula](https://github.com/zshzero/dracula-grub2/)」這個「GRUB 佈景主題」為例，
 
-執行下面指令，產生「/boot/grub/themes」這個資料夾。
+執行下面指令，產生「`/boot/grub/themes`」這個資料夾。
 
 ``` sh
 sudo mkdir -p /boot/grub/themes
@@ -77,11 +77,14 @@ git clone https://github.com/zshzero/dracula-grub2.git dracula
 sudo cp -rf dracula/. /boot/grub/themes/dracula
 ```
 
-以上就已經安裝完成了。
+以上步驟，就已經安裝完成了。
+
+>　關於「`dracula/.`」，後面多後面多加了「`/.`」，這樣在複製的時候，可以確保「/boot/grub/themes/dracula」這個資料夾已經存在時，複製過去，會直接覆蓋。
+
 
 請確保「佈景主題」裡，有「theme.txt」這個檔案，
 
-也就是「/boot/grub/themes/dracula/theme.txt」這個檔案
+也就是「`/boot/grub/themes/dracula/theme.txt`」這個檔案
 
 執行
 
@@ -189,6 +192,8 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 
+
+
 ## 輔助工具
 
 | 工具 | 簡介 |
@@ -230,6 +235,8 @@ grubrc-theme-ctrl set dracula
 例如，可以執行「`grubrc-theme-ctrl fzf`」，就會顯示「所有的佈景主題選單」供您選擇採用。
 
 
+
+
 ## 預覽工具
 
 可以採用「[grub2-theme-preview](https://samwhelp.github.io/note-about-manjaro/read/adjustment/tool/grub2-theme-preview.html)」，來預覽「GRUB佈景主題」。
@@ -241,11 +248,17 @@ grub2-theme-preview /boot/grub/themes/dracula
 ```
 
 
+
+
 ## See Also
 
-* [Grub2 theme tutorial](http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial)
-* [Grub2 theme reference](http://wiki.rosalab.ru/en/index.php/Grub2_theme_/_reference)
-* [Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html)
+| See Also |
+| --- |
+| [Grub2 theme tutorial](http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial) |
+| [Grub2 theme reference](http://wiki.rosalab.ru/en/index.php/Grub2_theme_/_reference) |
+| [Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html) |
+
+
 
 
 ## 案例
