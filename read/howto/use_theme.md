@@ -8,6 +8,9 @@ parent: 如何
 
 # Use Theme
 
+
+
+
 ## 主題
 
 * [放置路徑](#放置路徑)
@@ -19,16 +22,24 @@ parent: 如何
 
 ## 放置路徑
 
-* /usr/share/grub/themes/
-* /boot/grub/themes/
+| 放置路徑 |
+| ---- |
+| `/usr/share/grub/themes/` |
+| `/boot/grub/themes/` |
 
 > 上面兩個放置路徑都可以，其他路徑基本上也可以，不限定在上面兩個路徑
+
+
+
 
 ## 如何安裝
 
 安裝新的「Grub Theme(佈景主題)」，有兩個方式，一種是「手動安裝」，一種是「套件包安裝」。
 
 以下採用「手動安裝」來說明。
+
+
+
 
 ## 手動安裝
 
@@ -136,11 +147,14 @@ tree /boot/grub/themes/dracula
 1 directory, 37 files
 ```
 
+
+
+
 ## 設定採用
 
 接著來說明，如何設定「GRUB」採用某個佈景主題
 
-主要是編輯「/etc/default/grub」這個檔案
+主要是編輯「`/etc/default/grub`」這個檔案
 
 ``` sh
 sudo vi /etc/default/grub
@@ -149,16 +163,26 @@ sudo vi /etc/default/grub
 加入下面這一行
 
 ```
-GRUB_THEME="/boot/grub/themes/dracula/theme.txt"
+GRUB_THEME='/boot/grub/themes/dracula/theme.txt'
 ```
 
-接著執行下面指令，更新「grub的設定」
+或是也可以產生一個檔案「`/etc/default/grub.d/theme.cfg`」，加入上面的設定，執行指令如下
+
+``` sh
+cat << EOF | sudo tee /etc/default/grub.d/theme.cfg
+GRUB_THEME='/boot/grub/themes/dracula/theme.txt'
+
+EOF
+```
+
+
+接著執行下面指令，重新產生「`/boot/grub/grub.cfg`」這個設定檔。
 
 ``` sh
 sudo update-grub
 ```
 
-若沒有「update-grub」這個指令，可以改採下面的指令
+若沒有「`update-grub`」這個指令，可以改採下面的指令
 
 ``` sh
 sudo grub-mkconfig -o /boot/grub/grub.cfg
@@ -222,3 +246,11 @@ grub2-theme-preview /boot/grub/themes/dracula
 * [Grub2 theme tutorial](http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial)
 * [Grub2 theme reference](http://wiki.rosalab.ru/en/index.php/Grub2_theme_/_reference)
 * [Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html)
+
+
+## 案例
+
+| 案例 |
+| --- |
+| [grub-theme-refactoring](https://samwhelp.github.io/grub-theme-refactoring/) |
+| [grub-theme-remix](https://samwhelp.github.io/grub-theme-remix/) |
