@@ -11,7 +11,8 @@ has_children: true
 | --- |
 | [/boot/grub/grub.cfg](https://samwhelp.github.io/note-about-grub/read/start/grub_cfg.html) |
 | [/etc/default/grub](https://samwhelp.github.io/note-about-grub/read/start/etc_default_grub.html) |
-| [/etc/grub.d](https://samwhelp.github.io/note-about-grub/read/start/etc_grub_d.html) |
+| [/etc/default/grub.d/](https://samwhelp.github.io/note-about-grub/read/start/etc_default_grub_d.html) |
+| [/etc/grub.d/](https://samwhelp.github.io/note-about-grub/read/start/etc_grub_d.html) |
 | [自訂 Gurb Menu Entry](https://samwhelp.github.io/note-about-grub/read/start/custom_menu_entry.html) |
 | [/etc/grub.d/40_custom](https://samwhelp.github.io/note-about-grub/read/start/40_custom.html) |
 | [/boot/grub/custom.cfg](https://samwhelp.github.io/note-about-grub/read/start/custom_cfg.html) |
