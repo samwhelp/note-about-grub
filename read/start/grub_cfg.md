@@ -66,6 +66,18 @@ exec grub-mkconfig -o /boot/grub/grub.cfg "$@"
 * $ info grub -n '[Invoking grub-mkconfig](https://www.gnu.org/software/grub/manual/grub/html_node/Invoking-grub_002dmkconfig.html)'
 
 
+
+
+## 案例
+
+| 案例 |
+| --- |
+| [Create Live Usb Disk for Uefi](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-uefi.html) |
+| [Create Live Usb Disk for Bios](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-bios.html) |
+
+
+
+
 ## 接下來
 
 接下來，來了解「[/etc/default/grub](https://samwhelp.github.io/note-about-grub/read/start/etc_default_grub.html)」這個檔案的用處。
