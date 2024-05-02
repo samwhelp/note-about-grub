@@ -194,6 +194,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 
+> 關於「[update-grub](https://samwhelp.github.io/note-about-grub/read/explore/ubuntu/command/update-grub.html)」這個指令，裡面也是執行「`grub-mkconfig -o /boot/grub/grub.cfg`」，可以參考「[另一篇](https://samwhelp.github.io/note-about-grub/read/explore/ubuntu/command/update-grub.html)」的探索紀錄。
 
 
 ## 輔助工具
