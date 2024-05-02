@@ -8,13 +8,29 @@ parent: 如何
 
 # Use Background Image
 
+
+
+
 ## 主題
 
+* [案例](#案例)
 * [參考文件](#參考文件)
 * [放置路徑](#放置路徑)
 * [下載背景圖片](#下載背景圖片)
 * [設定採用](#設定採用)
 * [深入探索](#深入探索)
+
+
+
+
+## 案例
+
+| 案例 |
+| --- |
+| [grub-theme-refactoring](https://samwhelp.github.io/grub-theme-refactoring/) |
+| [grub-theme-remix](https://samwhelp.github.io/grub-theme-remix/) |
+
+
 
 
 ## 參考文件

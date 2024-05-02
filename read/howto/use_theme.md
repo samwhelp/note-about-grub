@@ -13,11 +13,24 @@ parent: 如何
 
 ## 主題
 
+* [案例](#案例)
 * [放置路徑](#放置路徑)
 * [手動安裝](#手動安裝)
 * [設定採用](#設定採用)
 * [輔助工具](#輔助工具)
 * [預覽工具](#預覽工具)
+
+
+
+
+## 案例
+
+| 案例 |
+| --- |
+| [grub-theme-refactoring](https://samwhelp.github.io/grub-theme-refactoring/) |
+| [grub-theme-remix](https://samwhelp.github.io/grub-theme-remix/) |
+
+
 
 
 ## 放置路徑
@@ -261,12 +274,3 @@ grub2-theme-preview /boot/grub/themes/dracula
 | [Grub2 theme reference](http://wiki.rosalab.ru/en/index.php/Grub2_theme_/_reference) |
 | [Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html) |
 
-
-
-
-## 案例
-
-| 案例 |
-| --- |
-| [grub-theme-refactoring](https://samwhelp.github.io/grub-theme-refactoring/) |
-| [grub-theme-remix](https://samwhelp.github.io/grub-theme-remix/) |
