@@ -19,41 +19,69 @@ parent: 入門
 
 放在「`/etc/default/grub.d/`」這個資料夾。
 
-舉例：
 
-可以產生一個檔案「/etc/default/grub.d/background.cfg」，內容如下
+### 舉例 1：
+
+可以產生一個檔案「`/etc/default/grub.d/background.cfg`」，內容如下
 
 ``` sh
 GRUB_BACKGROUND="/boot/grub/backgrounds/console-background.png"
 ```
 
-或是執行執行下面指令產生
+或是執行下面指令產生
 
 ``` sh
 sudo sh -c 'echo GRUB_BACKGROUND=\"/boot/grub/backgrounds/console-background.png\" > /etc/default/grub.d/background.cfg'
 ```
 
 
+### 舉例 2：
 
-
-可以產生另一個檔案「/etc/default/grub.d/theme.cfg」，內容如下
+可以產生另一個檔案「`/etc/default/grub.d/theme.cfg`」，內容如下
 
 ``` sh
 GRUB_THEME="/boot/grub/themes/poly-dark/theme.txt"
 ```
 
-或是執行執行下面指令產生
+或是執行下面指令產生
 
 ``` sh
 sudo sh -c 'echo GRUB_THEME=\"/boot/grub/themes/poly-dark/theme.txt\" > /etc/default/grub.d/theme.cfg'
 ```
 
+### 舉例 3：
+
+或是上面兩個例子的設定，放在同一個檔案「`/etc/default/grub.d/theme.cfg`」，內容如下
+
+``` sh
+GRUB_BACKGROUND="/boot/grub/backgrounds/console-background.png"
+GRUB_THEME="/boot/grub/themes/poly-dark/theme.txt"
+```
+
+或是執行下面指令產生
+
+``` sh
+cat << EOF | sudo tee /etc/default/grub.d/theme.cfg
+GRUB_BACKGROUND='/boot/grub/backgrounds/console-background.png'
+GRUB_THEME='/boot/grub/themes/poly-dark/theme.txt'
+
+EOF
+```
 
 
-接著執行下面指令，產生新的「/boot/grub/grub.cfg」。
+
+### 重新產生「/boot/grub/grub.cfg」
+
+上面三個例子，最後要執行下面指令，重新產生「`/boot/grub/grub.cfg`」
 
 ``` sh
 sudo update-grub
+```
+
+或是執行下面指令，重新產生「`/boot/grub/grub.cfg`」
+
+``` sh
+sudo grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
 
@@ -68,11 +96,17 @@ Generating grub configuration file ...
 Found theme: /boot/grub/themes/poly-dark/theme.txt
 Found background image: /boot/grub/backgrounds/console-background.png
 ...略...
+
 ```
 
-## 使用案例
 
-* [lubuntu-grub-theme](https://packages.ubuntu.com/jammy/lubuntu-grub-theme)
+## 案例
+
+> [grub-theme-refactoring](https://samwhelp.github.io/grub-theme-refactoring/)
+
+> [grub-theme-remix](https://samwhelp.github.io/grub-theme-remix/)
+
+> [lubuntu-grub-theme](https://packages.ubuntu.com/jammy/lubuntu-grub-theme)
 
 可以在「[filelist](https://packages.ubuntu.com/jammy/all/lubuntu-grub-theme/filelist)」
 
