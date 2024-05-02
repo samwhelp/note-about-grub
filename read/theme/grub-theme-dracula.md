@@ -1,6 +1,6 @@
 ---
 title: grub-theme-dracula
-nav_order: 7020
+nav_order: 7021
 has_children: false
 parent: Theme
 ---
