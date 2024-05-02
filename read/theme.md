@@ -59,3 +59,20 @@ has_children: true
 | [Grub2 theme tutorial](http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial) |
 | [Grub2 theme reference](http://wiki.rosalab.ru/en/index.php/Grub2_theme_/_reference) |
 | [Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html) |
+
+
+
+## Grub Theme
+
+| Grub Theme | Source | Pling | Refactoring | Remix |
+| ---------- | ------ | ----- | ----------- | ----- |
+| [grub-theme-poly-dark](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-poly-dark.html) | [Source](https://github.com/shvchk/poly-dark) | [Pling](https://www.pling.com/p/1230780) |  |  |
+| [grub-theme-poly-light](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-poly-light.html) | [Source](https://github.com/shvchk/poly-light) | [Pling](https://www.pling.com/p/1176413) |  |  |
+| [grub-theme-fallout](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-fallout.html) | [Source](https://github.com/shvchk/fallout-grub-theme) | [Pling](https://www.pling.com/p/1230882) |  |  |
+| [grub-theme-dracula](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-dracula.html) | [Source](https://github.com/zshzero/dracula-grub2) | [Pling](https://www.pling.com/p/1382440) |  |  |
+| [grub-theme-deepin](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-deepin.html) | [Source](https://github.com/martyr-deepin/deepin-grub2-themes) |  |  |  |
+| [grub-theme-bigsur](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-bigsur.html) | [Source](https://github.com/Teraskull/bigsur-grub2-theme) | [Pling](https://www.pling.com/p/1443844) | [Refactoring](https://github.com/samwhelp/grub-theme-bigsur-refactoring) |  |
+| [grub-theme-monterey](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-monterey.html) | [Source](https://github.com/sandesh236/monterey-grub-theme) | [Pling](https://www.pling.com/p/1577873) | [Refactoring](https://samwhelp.github.io/grub-theme-monterey-refactoring/) | [Remix](https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-monterey-remix) |
+| [grub-theme-obs](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-obs.html) | [Source](https://github.com/obster-y/grub-theme-obs) |  | [Refactoring](https://github.com/samwhelp/grub-theme-obs-refactoring) |  |
+| [grub-theme-darkmatter](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-darkmatter.html) | [Source](https://gitlab.com/VandalByte/darkmatter-grub-theme) | [Pling](https://www.pling.com/p/1603282) |  | [Remix](https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-darkmatter-remix) |
+| [grub-theme-atomic](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-atomic.html) | [Source](https://github.com/lfelipe1501/Atomic-GRUB2-Theme) | [Pling](https://www.pling.com/p/1200710) |  |  |
