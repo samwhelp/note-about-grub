@@ -7,6 +7,9 @@ has_children: true
 
 # 入門
 
+
+## 設定入門
+
 | 設定入門 |
 | --- |
 | [/boot/grub/grub.cfg](https://samwhelp.github.io/note-about-grub/read/start/grub_cfg.html) |
@@ -17,6 +20,8 @@ has_children: true
 | [/etc/grub.d/40_custom](https://samwhelp.github.io/note-about-grub/read/start/40_custom.html) |
 | [/boot/grub/custom.cfg](https://samwhelp.github.io/note-about-grub/read/start/custom_cfg.html) |
 
+
+## 指令入門
 
 | 指令入門 |
 | --- |
