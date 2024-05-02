@@ -12,9 +12,30 @@ has_children: false
 
 
 
+## 議題
+
+| 議題 | 簡介 |
+| --- | --- |
+| [GRUB Theme](https://samwhelp.github.io/note-about-grub/read/howto/use_theme.html) | GRUB如何安裝和設定採用某個佈景主題 |
+| [GRUB Use Background Image](https://samwhelp.github.io/note-about-grub/read/howto/use_background_image.html) | GRUB如何設定採用某個背景圖片 |
+
+
+
+
 ## Grub Theme Adjustment
 
 | Grub Theme Adjustment |
 | --- |
 | [grub-theme-refactoring](https://github.com/samwhelp/grub-theme-refactoring) |
 | [grub-theme-remix](https://github.com/samwhelp/grub-theme-remix) |
+
+
+
+
+## Docs
+
+| Docs |
+| --- |
+| [Grub2 theme tutorial](http://wiki.rosalab.ru/en/index.php/Grub2_theme_tutorial) |
+| [Grub2 theme reference](http://wiki.rosalab.ru/en/index.php/Grub2_theme_/_reference) |
+| [Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html) |
