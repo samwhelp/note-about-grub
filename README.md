@@ -76,7 +76,7 @@
 
 ## 相關筆記
 
-* [Theme 探索筆記](https://samwhelp.github.io/note-about-theme/)
+* [Theme 探索筆記](https://samwhelp.github.io/note-about-theme/) / [grub-theme](https://samwhelp.github.io/note-about-theme/read/boot-theme/grub-theme.html)
 
 
 
