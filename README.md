@@ -77,7 +77,10 @@
 
 ## 相關筆記
 
-* [Theme 探索筆記](https://samwhelp.github.io/note-about-theme/) / [grub-theme](https://samwhelp.github.io/note-about-theme/read/boot-theme/grub-theme.html)
+| 相關筆記 |
+| --- |
+| [Theme 探索筆記](https://samwhelp.github.io/note-about-theme/) / [grub-theme](https://samwhelp.github.io/note-about-theme/read/boot-theme/grub-theme.html) |
+| [Ventoy 探索筆記](https://samwhelp.github.io/note-about-ventoy/) |
 
 
 
