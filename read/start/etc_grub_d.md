@@ -1,24 +1,24 @@
 ---
-title: /etc/grub.d
+title: /etc/grub.d/
 nav_order: 1030
 has_children: false
 parent: 入門
 ---
 
 
-# /etc/grub.d
+# /etc/grub.d/
 
 ## Path
 
-* [/etc/grub.d](https://samwhelp.github.io/note-about-grub/read/explore/ubuntu/dir/etc_grub_d.html)
+* [/etc/grub.d/](https://samwhelp.github.io/note-about-grub/read/explore/ubuntu/dir/etc_grub_d.html)
 
-## 關於「/etc/grub.d」
+## 關於「/etc/grub.d/」
 
 延續「[之前](https://samwhelp.github.io/note-about-grub/read/start/grub_cfg.html)」提到的，
 
-在「[/etc/grub.d](https://samwhelp.github.io/note-about-grub/read/explore/ubuntu/dir/etc_grub_d.html)」裡面有放置很多「執行腳本(Shell Script)」。
+在「[/etc/grub.d/](https://samwhelp.github.io/note-about-grub/read/explore/ubuntu/dir/etc_grub_d.html)」裡面有放置很多「執行腳本(Shell Script)」。
 
-執行下面指令，觀看「/etc/grub.d」這個資料夾，有哪些檔案
+執行下面指令，觀看「/etc/grub.d/」這個資料夾，有哪些檔案
 
 ``` sh
 ls /etc/grub.d -1
@@ -66,6 +66,6 @@ the menu; and then adjust the default setting via /etc/default/grub.
 
 ## 接下來
 
-接下來，來探討「/etc/grub.d」這裡面的腳本，
+接下來，來探討「/etc/grub.d/」這裡面的腳本，
 
 先從「[/etc/grub.d/40_custom](https://samwhelp.github.io/note-about-grub/read/start/40_custom.html)」來探索「[如何自訂 Gurb Menu Entry](https://samwhelp.github.io/note-about-grub/read/start/custom_menu_entry.html)」。

@@ -1,12 +1,12 @@
 ---
-title: /etc/default/grub.d
+title: /etc/default/grub.d/
 nav_order: 1021
 has_children: false
 parent: 入門
 ---
 
 
-# /etc/default/grub.d
+# /etc/default/grub.d/
 
 
 ## 關於「/etc/default/grub.d/」
