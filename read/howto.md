@@ -15,8 +15,8 @@ has_children: true
 
 | 議題 | 簡介 |
 | --- | --- |
-| [GRUB Use Background Image](https://samwhelp.github.io/note-about-grub/read/howto/use_background_image.html) | GRUB如何設定採用某個背景圖片 |
 | [GRUB Theme](https://samwhelp.github.io/note-about-grub/read/howto/use_theme.html) | GRUB如何安裝和設定採用某個佈景主題 |
+| [GRUB Use Background Image](https://samwhelp.github.io/note-about-grub/read/howto/use_background_image.html) | GRUB如何設定採用某個背景圖片 |
 
 
 
