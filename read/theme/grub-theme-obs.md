@@ -9,11 +9,35 @@ parent: Theme
 # grub-theme-obs
 
 
-## Source
+
+
+## 主題
+
+* [來源](#來源)
+* [下載安裝](#下載安裝)
+* [設定採用](#設定採用)
+
+
+
+
+## 來源
 
 | Source |
 | ------ |
 | [GitHub](https://github.com/obster-y/grub-theme-obs) |
+
+
+
+
+## 下載安裝
+
+
+
+
+
+## 設定採用
+
+
 
 
 ## Remix

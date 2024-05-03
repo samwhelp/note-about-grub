@@ -9,12 +9,34 @@ parent: Theme
 # grub-theme-monterey
 
 
-## Source
+
+
+## 主題
+
+* [來源](#來源)
+* [下載安裝](#下載安裝)
+* [設定採用](#設定採用)
+
+
+
+
+## 來源
 
 | Source |
 | ------ |
 | [GitHub](https://github.com/sandesh236/monterey-grub-theme) |
 | [Pling](https://www.pling.com/p/1577873) |
+
+
+
+
+## 下載安裝
+
+
+
+
+
+## 設定採用
 
 
 
