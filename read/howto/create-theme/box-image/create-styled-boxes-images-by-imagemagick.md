@@ -15,7 +15,11 @@ grand_parent: 如何
 ## 主題
 
 * [完整腳本範例](#完整腳本範例)
+* [承接](#承接)
+* [操作步驟](#操作步驟)
+* [參考文章](#參考文章)
 * [Docs](#docs)
+
 
 
 
@@ -27,6 +31,25 @@ grand_parent: 如何
 | --- |
 | [demo-create-menu-box-rounded-rectangle-dark](https://github.com/samwhelp/note-about-grub/tree/gh-pages/_demo/howto/demo-create-theme-image/demo-create-menu-box-rounded-rectangle-dark) |
 | [demo-create-terminal-box-rounded-rectangle-dark](https://github.com/samwhelp/note-about-grub/tree/gh-pages/_demo/howto/demo-create-theme-image/demo-create-terminal-box-rounded-rectangle-dark) |
+
+
+
+
+## 承接
+
+接續「[產生 menu-box-c.png](https://samwhelp.github.io/note-about-grub/read/howto/create-theme/box-image/create-menu-box-c-by-imagemagick.html)」這篇學習的起點，
+
+這篇要來介紹『**如何透過「ImageMagick」製作簡易「圓角矩形」的「九宮圖」**』。
+
+
+
+
+## 操作步驟
+
+
+
+
+## 參考文章
 
 
 
