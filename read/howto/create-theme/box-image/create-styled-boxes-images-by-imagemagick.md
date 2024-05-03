@@ -66,6 +66,9 @@ grand_parent: 如何
 
 ## 操作步驟
 
+
+執行下面指令，先產生一張「圓角矩形」的「資源圖」，名稱是「[mask.png](https://github.com/samwhelp/note-about-grub/blob/gh-pages/_demo/howto/demo-create-theme-image/demo-create-menu-box-rounded-rectangle-dark/mask.png)」。
+
 ``` sh
 
 convert \
@@ -75,6 +78,8 @@ convert \
 
 ```
 
+
+執行下面指令，擷取「四方的圓角」，圖片大小是「20x20」。
 
 ``` sh
 convert mask.png -crop '20x20+0+0' 'PNG32:menu-box-nw.png'
@@ -87,6 +92,9 @@ convert mask.png -crop '20x20+0+180' 'PNG32:menu-box-sw.png'
 convert mask.png -crop '20x20+180+180' 'PNG32:menu-box-se.png'
 
 ```
+
+
+執行下面指令，產生「除了四方圓角」的區域，圖片大小是「20x20」。
 
 
 ``` sh
