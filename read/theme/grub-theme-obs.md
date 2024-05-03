@@ -21,3 +21,4 @@ parent: Theme
 | Link | GitHub |
 | ---- | ------ |
 | [grub-theme-obs-refactoring](https://samwhelp.github.io/grub-theme-obs-refactoring/) | [GitHub](https://github.com/samwhelp/grub-theme-obs-refactoring) |
+| [grub-theme-obs-remix](https://samwhelp.github.io/grub-theme-obs-remix/) | [GitHub](https://github.com/samwhelp/grub-theme-obs-remix) |

@@ -24,3 +24,4 @@ parent: Theme
 | Link | GitHub |
 | ---- | ------ |
 | [grub-theme-monterey-refactoring](https://samwhelp.github.io/grub-theme-monterey-refactoring/) | [GitHub](https://github.com/samwhelp/grub-theme-monterey-refactoring) |
+| [grub-theme-monterey-remix](https://samwhelp.github.io/grub-theme-monterey-remix/) | [GitHub](https://github.com/samwhelp/grub-theme-monterey-remix) |
