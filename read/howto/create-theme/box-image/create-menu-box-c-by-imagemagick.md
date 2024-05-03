@@ -116,7 +116,7 @@ convert -size 10x10 'canvas:rgba(0,0,0,0.7)' 'PNG32:menu-box-c.png'
 
 ## 接下來
 
-接下來，我們要來探索『[如何透過「ImageMagick」製作簡易「圓角矩形」的「九宮圖」](https://samwhelp.github.io/note-about-grub/read/howto/create-theme/box-image/create-styled-boxes-images-by-imagemagick.html)』。
+接下來，我們要來探索『[如何透過「ImageMagick」製作簡易「圓角矩形」的「九宮圖」](https://samwhelp.github.io/note-about-grub/read/howto/create-theme/box-image/create-menu-box-image-by-imagemagick.html)』。
 
 
 
