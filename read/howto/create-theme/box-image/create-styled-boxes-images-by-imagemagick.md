@@ -16,6 +16,7 @@ grand_parent: 如何
 
 * [完整腳本範例](#完整腳本範例)
 * [承接](#承接)
+* [九宮圖代號](#九宮圖代號)
 * [操作步驟](#操作步驟)
 * [參考文章](#參考文章)
 * [Docs](#docs)
@@ -42,6 +43,15 @@ grand_parent: 如何
 這篇要來介紹『**如何透過「ImageMagick」製作簡易「圓角矩形」的「九宮圖」**』。
 
 
+
+
+## 九宮圖代號
+
+| Region            | Region        | Region             |
+| ----------------- | ------------- | ------------------ |
+| 1. Northwest (nw) | 2. North (n)  | 3. Northeast (ne)  |
+| 4. West (w)       | 5. Center (c) | 6. East (e)        |
+| 7. Southwest (sw) | 8. South (s)  | 9. Southeast (se)  |
 
 
 ## 操作步驟
