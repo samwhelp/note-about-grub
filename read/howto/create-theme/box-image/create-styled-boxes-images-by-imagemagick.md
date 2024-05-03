@@ -79,7 +79,7 @@ convert \
 ```
 
 
-執行下面指令，擷取「四方的圓角」，圖片大小是「20x20」。
+執行下面指令，從「mask.png」擷取「四方的圓角」，圖片大小是「20x20」。
 
 ``` sh
 convert mask.png -crop '20x20+0+0' 'PNG32:menu-box-nw.png'
