@@ -112,3 +112,13 @@ convert -size 10x10 'canvas:rgba(0,0,0,0.7)' 'PNG32:menu-box-c.png'
 
 
 ## 參考文章
+
+| 參考文章 |
+| ------- |
+| [https://imagemagick.org/Usage/canvas/](https://imagemagick.org/Usage/canvas/) |
+| [https://imagemagick.org/Usage/files/](https://imagemagick.org/Usage/files/) |
+| [https://imagemagick.org/Usage/formats/](https://imagemagick.org/Usage/formats/) |
+| [https://www.imagemagick.org/script/color.php](https://www.imagemagick.org/script/color.php) |
+| [https://www.imagemagick.org/script/formats.php](https://www.imagemagick.org/script/formats.php) |
+| [https://www.imagemagick.org/discourse-server/viewtopic.php?t=24060](https://www.imagemagick.org/discourse-server/viewtopic.php?t=24060) |
+| [https://www.imagemagick.org/discourse-server/viewtopic.php?t=18300](https://www.imagemagick.org/discourse-server/viewtopic.php?t=18300) |
