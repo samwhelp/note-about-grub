@@ -51,6 +51,12 @@ grand_parent: 如何
 
 ## 參考文章
 
+| 參考文章 |
+| ------- |
+| [https://legacy.imagemagick.org/Usage/draw/](https://legacy.imagemagick.org/Usage/draw/) |
+| [https://legacy.imagemagick.org/Usage/thumbnails/#rounded](https://legacy.imagemagick.org/Usage/thumbnails/#rounded) |
+| [https://stackoverflow.com/questions/718314/rounding-corners-of-pictures-with-imagemagick](https://stackoverflow.com/questions/718314/rounding-corners-of-pictures-with-imagemagick) |
+
 
 
 
