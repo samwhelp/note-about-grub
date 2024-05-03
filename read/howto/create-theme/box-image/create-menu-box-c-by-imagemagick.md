@@ -20,6 +20,7 @@ grand_parent: 如何
 * [前置作業](#前置作業)
 * [操作步驟](#操作步驟)
 * [參考文章](#參考文章)
+* [接下來](#接下來)
 
 
 
@@ -107,6 +108,11 @@ convert -size 10x10 'canvas:rgba(0,0,0,0.7)' 'PNG32:menu-box-c.png'
 這張圖只有單純的「畫布(canvas)」，
 
 畫布顏色是「黑色透明」，也就是「`rgba(0,0,0,0.7)`」。
+
+
+## 接下來
+
+接下來，我們要來探索『[如何透過「ImageMagick」製作簡易「圓角矩形」的「九宮圖」](https://samwhelp.github.io/note-about-grub/read/howto/create-theme/box-image/create-styled-boxes-images-by-imagemagick.html)』。
 
 
 
