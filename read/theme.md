@@ -12,9 +12,9 @@ has_children: true
 
 
 
-## Pling
+## 集散地
 
-| Pling |
+| 集散地 |
 | --- |
 | Pling / [Grub Theme](https://www.pling.com/browse?cat=109) |
 
