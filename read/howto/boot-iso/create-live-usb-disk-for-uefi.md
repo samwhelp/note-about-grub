@@ -425,8 +425,8 @@ terminal_output gfxterm
 ## ## Theme
 ##
 
-background_image ($root)/EFI/grub/themes/grub-theme-darkmatter-remix/background.jpg
-set theme=($root)/EFI/grub/themes/grub-theme-darkmatter-remix/theme.txt
+background_image ($root)/EFI/grub/themes/grub-theme-obs-remix/background.jpg
+set theme=($root)/EFI/grub/themes/grub-theme-obs-remix/theme.txt
 export theme
 
 
@@ -484,26 +484,27 @@ menuentry "Fedora 40 ISO / Kde Plasma" {
 ## grub-theme
 
 ``` sh
-set theme=($root)/EFI/grub/themes/grub-theme-darkmatter-remix/theme.txt
+set theme=($root)/EFI/grub/themes/grub-theme-obs-remix/theme.txt
 ```
 
-上面的設定，我是採用「[grub-theme-darkmatter-remix](https://github.com/samwhelp/grub-theme-remix/tree/grub-theme-darkmatter-remix)」。
+上面的設定，我是採用「[grub-theme-obs-remix](https://github.com/samwhelp/grub-theme-obs-remix)」。
 
 
-所以執行下面的指令，下載下來，並且解壓縮，放置到「mnt/EFI/grub/themes/grub-theme-darkmatter-remix」這個路徑。
+所以執行下面的指令，下載下來，並且解壓縮，放置到「mnt/EFI/grub/themes/grub-theme-obs-remix」這個路徑。
 
 ``` sh
 
-mkdir -p tmp
+mkdir -p "./tmp"
 
 
-wget -c "https://github.com/samwhelp/grub-theme-remix/archive/refs/heads/grub-theme-darkmatter-remix.tar.gz" -O "tmp/grub-theme-remix-grub-theme-darkmatter-remix.tar.gz"
+wget -c "https://github.com/samwhelp/grub-theme-obs-remix/archive/refs/heads/main.tar.gz" -O "./tmp/grub-theme-obs-remix-main.tar.gz"
 
-tar xf "tmp/grub-theme-remix-grub-theme-darkmatter-remix.tar.gz" -C "tmp"
+tar xf "./tmp/grub-theme-obs-remix-main.tar.gz" -C "./tmp"
+
 
 sudo mkdir -p "mnt/EFI/grub/themes"
 
-sudo cp -rf "tmp/grub-theme-remix-grub-theme-darkmatter-remix/." "mnt/EFI/grub/themes/grub-theme-darkmatter-remix"
+sudo cp -rf "tmp/grub-theme-obs-remix-main/." "mnt/EFI/grub/themes/grub-theme-obs-remix"
 
 ```
 
