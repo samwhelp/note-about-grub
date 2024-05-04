@@ -7,8 +7,9 @@ has_children: true
 
 # 如何
 
-* [外觀](#外觀)
+* [關於「GRUB選單畫面」的「外觀」](#關於grub選單畫面的外觀)
 * [Boot ISO](#boot-iso)
+* [製作「GRUB選單畫面」的「元素圖片」](#製作grub選單畫面的元素圖片)
 
 
 
