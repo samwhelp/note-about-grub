@@ -16,6 +16,7 @@ parent: Theme
 * [來源](#來源)
 * [下載安裝](#下載安裝)
 * [設定採用](#設定採用)
+* [Remix](#remix)
 
 
 
@@ -36,3 +37,12 @@ parent: Theme
 
 
 ## 設定採用
+
+
+
+
+## Remix
+
+| Link | GitHub |
+| ---- | ------ |
+| [grub-theme-glass-remix](https://samwhelp.github.io/grub-theme-glass-remix/) | [GitHub](https://github.com/samwhelp/grub-theme-glass-remix) |
