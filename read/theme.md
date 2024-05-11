@@ -37,6 +37,7 @@ has_children: true
 
 | Grub Theme | Source | Pling | Refactoring | Remix |
 | ---------- | ------ | ----- | ----------- | ----- |
+| [grub-theme-score](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-score.html) | [Source](https://github.com/samwhelp/grub-theme-score) |  |  | [Remix](https://github.com/samwhelp/grub-theme-score-remix) |
 | [grub-theme-glass](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-glass.html) | [Source](https://github.com/samwhelp/grub-theme-glass) |  |  | [Remix](https://github.com/samwhelp/grub-theme-glass-remix) |
 | [grub-theme-cover](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-cover.html) | [Source](https://github.com/samwhelp/grub-theme-cover) |  |  | [Remix](https://github.com/samwhelp/grub-theme-cover-remix) |
 | [grub-theme-poly-dark](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-poly-dark.html) | [Source](https://github.com/shvchk/poly-dark) | [Pling](https://www.pling.com/p/1230780) |  |  |
