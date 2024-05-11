@@ -1,12 +1,12 @@
 ---
-title: grub-theme-glass
-nav_order: 7001
+title: grub-theme-score
+nav_order: 7000
 has_children: false
 parent: Theme
 ---
 
 
-# grub-theme-glass
+# grub-theme-score
 
 
 
@@ -26,7 +26,7 @@ parent: Theme
 
 | Source |
 | ------ |
-| [GitHub](https://github.com/samwhelp/grub-theme-glass) |
+| [GitHub](https://github.com/samwhelp/grub-theme-score) |
 
 
 
@@ -46,7 +46,7 @@ parent: Theme
 
 | Link | GitHub |
 | ---- | ------ |
-| [grub-theme-glass-remix](https://samwhelp.github.io/grub-theme-glass-remix/) | [GitHub](https://github.com/samwhelp/grub-theme-glass-remix) |
+| [grub-theme-score-remix](https://samwhelp.github.io/grub-theme-score-remix/) | [GitHub](https://github.com/samwhelp/grub-theme-score-remix) |
 
 
 
