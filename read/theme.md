@@ -40,6 +40,8 @@ has_children: true
 | [grub-theme-score](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-score.html) | [Source](https://github.com/samwhelp/grub-theme-score) |  |  | [Remix](https://github.com/samwhelp/grub-theme-score-remix) |
 | [grub-theme-glass](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-glass.html) | [Source](https://github.com/samwhelp/grub-theme-glass) |  |  | [Remix](https://github.com/samwhelp/grub-theme-glass-remix) |
 | [grub-theme-cover](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-cover.html) | [Source](https://github.com/samwhelp/grub-theme-cover) |  |  | [Remix](https://github.com/samwhelp/grub-theme-cover-remix) |
+| [grub-theme-banner](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-banner.html) | [Source](https://github.com/samwhelp/grub-theme-banner) |  |  | [Remix](https://github.com/samwhelp/grub-theme-banner-remix) |
+| [grub-theme-cross](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-cross.html) | [Source](https://github.com/samwhelp/grub-theme-cross) |  |  | [Remix](https://github.com/samwhelp/grub-theme-cross-remix) |
 | [grub-theme-poly-dark](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-poly-dark.html) | [Source](https://github.com/shvchk/poly-dark) | [Pling](https://www.pling.com/p/1230780) |  |  |
 | [grub-theme-poly-light](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-poly-light.html) | [Source](https://github.com/shvchk/poly-light) | [Pling](https://www.pling.com/p/1176413) |  |  |
 | [grub-theme-fallout](https://samwhelp.github.io/note-about-grub/read/theme/grub-theme-fallout.html) | [Source](https://github.com/shvchk/fallout-grub-theme) | [Pling](https://www.pling.com/p/1230882) |  |  |
