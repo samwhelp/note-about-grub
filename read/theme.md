@@ -62,6 +62,7 @@ has_children: true
 | --- |
 | [grub-theme-refactoring](https://github.com/samwhelp/grub-theme-refactoring) |
 | [grub-theme-remix](https://github.com/samwhelp/grub-theme-remix) |
+| [demo-grub-theme-image-creation](https://github.com/samwhelp/demo-grub-theme-image-creation) |
 
 
 
