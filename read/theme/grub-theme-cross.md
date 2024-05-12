@@ -1,12 +1,12 @@
 ---
-title: grub-theme-glass
-nav_order: 7002
+title: grub-theme-cross
+nav_order: 7005
 has_children: false
 parent: Theme
 ---
 
 
-# grub-theme-glass
+# grub-theme-cross
 
 
 
@@ -18,7 +18,6 @@ parent: Theme
 * [設定採用](#設定採用)
 * [Remix](#remix)
 * [Grub Theme / Glass / Series](#grub-theme--glass--series)
-* [Grub Theme / Glass / Series](#grub-theme--glass--series)
 * [Demo / Grub Theme / Image Creation](#demo--grub-theme--image-creation)
 
 
@@ -28,7 +27,7 @@ parent: Theme
 
 | Source |
 | ------ |
-| [GitHub](https://github.com/samwhelp/grub-theme-glass) |
+| [GitHub](https://github.com/samwhelp/grub-theme-cross) |
 
 
 
@@ -48,7 +47,7 @@ parent: Theme
 
 | Link | GitHub |
 | ---- | ------ |
-| [grub-theme-glass-remix](https://samwhelp.github.io/grub-theme-glass-remix/) | [GitHub](https://github.com/samwhelp/grub-theme-glass-remix) |
+| [grub-theme-cross-remix](https://samwhelp.github.io/grub-theme-cross-remix/) | [GitHub](https://github.com/samwhelp/grub-theme-cross-remix) |
 
 
 

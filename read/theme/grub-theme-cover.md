@@ -1,6 +1,6 @@
 ---
 title: grub-theme-cover
-nav_order: 7002
+nav_order: 7003
 has_children: false
 parent: Theme
 ---

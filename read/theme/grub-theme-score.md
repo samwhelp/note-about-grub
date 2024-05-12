@@ -1,6 +1,6 @@
 ---
 title: grub-theme-score
-nav_order: 7000
+nav_order: 7001
 has_children: false
 parent: Theme
 ---
