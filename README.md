@@ -5,6 +5,7 @@
 | Link | GitHub |
 | ---- | ------ |
 | [Grub 探索筆記](https://samwhelp.github.io/note-about-grub/) | [GitHub](https://github.com/samwhelp/note-about-grub) |
+| [Grub Theme / Image Creation](https://samwhelp.github.io/demo-grub-theme-image-creation/) | [GitHub](https://github.com/samwhelp/demo-grub-theme-image-creation) |
 
 
 
