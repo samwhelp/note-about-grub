@@ -19,6 +19,7 @@ parent: 如何
 * [設定採用](#設定採用)
 * [輔助工具](#輔助工具)
 * [預覽工具](#預覽工具)
+* [接下來](#接下來)
 
 
 
@@ -284,3 +285,9 @@ grub2-theme-preview /boot/grub/themes/dracula
 | [Grub2 theme reference](http://wiki.rosalab.ru/en/index.php/Grub2_theme_/_reference) |
 | [Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html) |
 
+
+
+
+## 接下來
+
+> 這篇說明在「`/etc/default/grub`」設定「`GRUB_THEME`」這個參數，接下來探索『[如何同時也可以設定「`GRUB_BACKGROUND`」](https://samwhelp.github.io/note-about-grub/read/howto/use_background_image.html)』這個參數。
