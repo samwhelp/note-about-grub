@@ -71,6 +71,9 @@ parent: 如何
 | [grub-theme-cross](https://github.com/samwhelp/grub-theme-cross) | [grub-theme-cross-remix](https://github.com/samwhelp/grub-theme-cross-remix) |
 
 
+> 更多的「[Grub Theme](https://samwhelp.github.io/note-about-grub/read/theme.html)」
+
+
 
 
 ## 參考文件
