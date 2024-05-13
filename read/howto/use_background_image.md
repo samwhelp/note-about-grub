@@ -85,3 +85,13 @@ parent: 如何
 ## 以前的探索
 
 * [以前的探索](https://github.com/samwhelp/note-about-grub/blob/gh-pages/_demo/draft/use_background_image.md)
+
+
+
+
+## 相關案例
+
+| 議題 | 簡介 |
+| --- | --- |
+| [Create Live Usb Disk for Uefi](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-uefi.html) | 產生單獨透過GRUB和ISO檔開機的「USB Disk」/ 「UEFI 版」 |
+| [Create Live Usb Disk for Bios](https://samwhelp.github.io/note-about-grub/read/howto/boot-iso/create-live-usb-disk-for-bios.html) | 產生單獨透過GRUB和ISO檔開機的「USB Disk」/ 「BIOS 版」 |
