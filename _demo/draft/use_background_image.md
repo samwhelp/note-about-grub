@@ -35,9 +35,14 @@ parent: 如何
 
 ## 參考文件
 
-* $ `info grub -n 'Simple configuration'` ## [6.1 Simple configuration handling](https://www.gnu.org/software/grub/manual/grub/html_node/Simple-configuration.html)
-* $ `info grub -n 'background_image'` ## [16.3.5 background_image](https://www.gnu.org/software/grub/manual/grub/html_node/background_005fimage.html#background_005fimage)
-* $ `info grub -n 'Theme file format'` ## [7 Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html#Global-Properties)
+| 參考文件 | 線上閱讀 |
+| ------- | ------- |
+| $ `info grub -n 'Simple configuration'` | [6.1 Simple configuration handling](https://www.gnu.org/software/grub/manual/grub/html_node/Simple-configuration.html) |
+| $ `info grub -n 'background_image'` | [16.3.5 background_image](https://www.gnu.org/software/grub/manual/grub/html_node/background_005fimage.html#background_005fimage) |
+| $ `info grub -n 'theme'` | [15.1.46 theme](https://www.gnu.org/software/grub/manual/grub/html_node/theme.html#theme) |
+| $ `info grub -n 'Theme file format'` | [7 Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html#Global-Properties) |
+
+
 
 
 ## 放置路徑
