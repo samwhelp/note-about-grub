@@ -1,0 +1,21 @@
+
+
+##
+## # Grub-Theme
+##
+
+
+
+
+##
+## ## Package / Grub
+##
+
+#grub2
+
+#grub-common
+#grub-pc
+
+
+
+
