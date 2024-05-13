@@ -80,3 +80,8 @@ parent: 如何
 | $ `info grub -n 'Simple configuration'` | [6.1 Simple configuration handling](https://www.gnu.org/software/grub/manual/grub/html_node/Simple-configuration.html) |
 | $ `info grub -n 'background_image'` | [16.3.5 background_image](https://www.gnu.org/software/grub/manual/grub/html_node/background_005fimage.html#background_005fimage) |
 | $ `info grub -n 'Theme file format'` | [7 Theme file format](https://www.gnu.org/software/grub/manual/grub/html_node/Theme-file-format.html#Global-Properties) |
+
+
+## 以前的探索
+
+* [以前的探索](https://github.com/samwhelp/note-about-grub/blob/gh-pages/_demo/draft/use_background_image.md)
