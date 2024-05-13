@@ -46,6 +46,10 @@ parent: 如何
 
 > 關於「`GRUB_BACKGROUND`」，指定的「背景圖」，則是會在「GRUB Teminal」狀態下顯示。
 
+所以在其他的系統，我們可以自己手動加入「[/etc/grub.d/05_debian_theme](https://github.com/samwhelp/note-about-grub/blob/gh-pages/_demo/prototype/grub-config/grub-helper/grub-mkconfig-helper/asset/overlay/etc/grub.d/05_debian_theme)」這個檔案，
+
+然後執行「`sudo update-grub`」或是「`sudo grub-mkconfig -o /boot/grub/grub.cfg`」就會有同樣的效果。
+
 
 
 
