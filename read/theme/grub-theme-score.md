@@ -17,8 +17,8 @@ parent: Theme
 * [下載安裝](#下載安裝)
 * [設定採用](#設定採用)
 * [Remix](#remix)
-* [Grub Theme / Glass / Series](#grub-theme--glass--series)
-* [Demo / Grub Theme / Image Creation](#demo--grub-theme--image-creation)
+* [Grub Theme / Glass Series](#grub-theme--glass-series)
+* [Grub Theme / Image Creation](#grub-theme--image-creation)
 
 
 
@@ -52,7 +52,7 @@ parent: Theme
 
 
 
-## Grub Theme / Glass / Series
+## Grub Theme / Glass Series
 
 | Base | Remix |
 | ---- | ----- |
@@ -65,7 +65,7 @@ parent: Theme
 
 
 
-## Demo / Grub Theme / Image Creation
+## Grub Theme / Image Creation
 
 | Link | GitHub |
 | ---- | ------ |
