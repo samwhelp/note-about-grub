@@ -9,6 +9,8 @@ parent: 如何
 # Boot ISO
 
 
+
+
 ## GRUB Boot ISO 範例
 
 * [GRUB Boot ISO 範例](https://github.com/samwhelp/note-about-grub/tree/gh-pages/_demo/prototype/boot_iso)
@@ -26,9 +28,13 @@ parent: 如何
 | Ubuntu | [/etc/grub.d/40_custom](https://github.com/samwhelp/note-about-grub/blob/gh-pages/_demo/prototype/boot_iso/demo_40_custom/Ubuntu/22.04/40_custom) | [/boot/grub/custom.cfg](https://github.com/samwhelp/note-about-grub/blob/gh-pages/_demo/prototype/boot_iso/demo_41_custom/Ubuntu/22.04/custom.cfg) |
 
 
+
+
 ## 指引
 
 * [如何自訂 Gurb Menu Entry](https://samwhelp.github.io/note-about-grub/read/start/custom_menu_entry.html)
+
+
 
 
 ## GRUB Menu Entry / Boot ISO 樣板 / Arch
@@ -49,6 +55,8 @@ menuentry "Arch 2022.04.05 ISO" --class Arch {
 ```
 
 
+
+
 ## GRUB Menu Entry / Boot ISO 樣板 / Manjaro
 
 ``` sh
@@ -67,6 +75,8 @@ menuentry "Manjaro xfce 21.2.5 ISO" --class Manjaro {
 ```
 
 
+
+
 ## GRUB Menu Entry / Boot ISO 樣板 / Debian
 
 ``` sh
@@ -83,6 +93,8 @@ menuentry "Debian 11 Xfce ISO" --class Debian {
 	initrd (loop)/live/initrd.img-5.10.0-10-amd64
 }
 ```
+
+
 
 
 ## GRUB Menu Entry / Boot ISO 樣板 / Ubuntu
@@ -106,10 +118,14 @@ menuentry "Xubuntu 22.04 Live ISO" --class Ubuntu {
 ```
 
 
+
+
 ## 參考文章
 
 * [使用 GRUB 以硬碟中的 ISO 映像檔開機](https://blog.gtwang.org/linux/boot-iso-image-from-your-hard-drive-in-ubuntu/)
 * [如何從 grub2 啟動 Ubuntu Live CD iso](https://ttys3.dev/post/how-to-boot-ubuntu-live-cd-iso-from-grub2/)
+
+
 
 
 ## Reference
@@ -121,10 +137,12 @@ menuentry "Xubuntu 22.04 Live ISO" --class Ubuntu {
 * Ubuntu Community Help Wiki / [Grub2/ISOBoot/Examples](https://help.ubuntu.com/community/Grub2/ISOBoot/Examples)
 
 
+
+
 ## See Also
 
 * [grml-rescueboot](https://samwhelp.github.io/note-about-grub/read/link/grml-rescueboot.html)
-* [ventoy](https://www.ventoy.net/)
+* [ventoy](https://www.ventoy.net/) (GitHub / Ventoy / INSTALL /grub / [grub.cfg](https://github.com/ventoy/Ventoy/blob/master/INSTALL/grub/grub.cfg))
 * [grub-iso-boot](https://github.com/Jimmy-Z/grub-iso-boot)
 * [glim](https://github.com/thias/glim)
 * [multibootusb](https://github.com/aguslr/multibootusb)
