@@ -122,6 +122,13 @@ menuentry "Xubuntu 22.04 Live ISO" --class Ubuntu {
 
 
 
+## GRUB Menu Entry / Boot ISO 樣板 / Fedora
+
+> 請參考「Fedora 探索筆記 / [Boot ISO By GRUB](https://samwhelp.github.io/note-about-fedora/read/core/iso/boot-iso/boot-iso-by-grub.html#grub-menu-entry--boot-iso-%E6%A8%A3%E6%9D%BF--fedora)」
+
+
+
+
 ## 參考文章
 
 * [使用 GRUB 以硬碟中的 ISO 映像檔開機](https://blog.gtwang.org/linux/boot-iso-image-from-your-hard-drive-in-ubuntu/)
