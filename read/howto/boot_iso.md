@@ -50,8 +50,8 @@ menuentry "Arch 2022.04.05 ISO" --class Arch {
 	set boot_option=""
 	#set boot_option="quiet splash"
 	linux (loop)/arch/boot/x86_64/vmlinuz-linux img_dev=$img_dev img_loop=$iso_file $boot_option
-	initrd (loop)/arch/boot/x86_64/initramfs-linux.img
-	#initrd (loop)/arch/boot/intel-ucode.img (loop)/arch/boot/amd-ucode.img (loop)/arch/boot/x86_64/initramfs-linux.img
+	#initrd (loop)/arch/boot/x86_64/initramfs-linux.img
+	initrd (loop)/arch/boot/x86_64/initramfs-linux.img (loop)/arch/boot/intel-ucode.img (loop)/arch/boot/amd-ucode.img
 }
 ```
 
@@ -71,8 +71,8 @@ menuentry "Manjaro xfce 21.2.5 ISO" --class Manjaro {
 	#set boot_option="lang=zh_TW keytable=us tz=Asia/Taipei"
 	#set boot_option="quiet splash"
 	linux (loop)/boot/vmlinuz-x86_64 img_dev=$img_dev img_loop=$iso_file $boot_option
-	initrd (loop)/boot/initramfs-x86_64.img
-	#initrd (loop)/boot/intel_ucode.img (loop)/boot/amd_ucode.img (loop)/boot/initramfs-x86_64.img
+	#initrd (loop)/boot/initramfs-x86_64.img
+	initrd (loop)/boot/initramfs-x86_64.img (loop)/boot/intel_ucode.img (loop)/boot/amd_ucode.img
 }
 ```
 
