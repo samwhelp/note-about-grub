@@ -41,18 +41,30 @@ parent: 如何
 
 
 ``` sh
-menuentry "Arch 2022.04.05 ISO" --class Arch {
-	set iso_file="/opt/iso/arch/latest/archlinux-2022.04.05-x86_64.iso"
-	search --set=iso_partition --no-floppy --file $iso_file
-	probe --set=iso_partition_uuid --fs-uuid $iso_partition
-	set img_dev="/dev/disk/by-uuid/$iso_partition_uuid"
-	loopback loop ($iso_partition)$iso_file
+
+menuentry "Archlinux ISO / Latest" --class archlinux {
+
+	set iso_file="/opt/iso/archlinux/latest/archlinux.iso"
+
+	search --set=iso_partition --no-floppy --file ${iso_file}
+	probe --set=iso_partition_uuid --fs-uuid ${iso_partition}
+
+	#set img_dev="/dev/disk/by-uuid/${iso_partition_uuid}"
+	set img_dev="UUID=${iso_partition_uuid}"
+
+
+	loopback loop (${iso_partition})${iso_file}
+
+
 	set boot_option=""
 	#set boot_option="quiet splash"
-	linux (loop)/arch/boot/x86_64/vmlinuz-linux img_dev=$img_dev img_loop=$iso_file $boot_option
-	#initrd (loop)/arch/boot/x86_64/initramfs-linux.img
-	initrd (loop)/arch/boot/x86_64/initramfs-linux.img (loop)/arch/boot/intel-ucode.img (loop)/arch/boot/amd-ucode.img
+
+
+	linux (loop)/arch/boot/x86_64/vmlinuz-linux img_dev=${img_dev} img_loop=${iso_file} archisobasedir=arch ${boot_option}
+	initrd (loop)/arch/boot/x86_64/initramfs-linux.img
+
 }
+
 ```
 
 
@@ -61,19 +73,30 @@ menuentry "Arch 2022.04.05 ISO" --class Arch {
 ## GRUB Menu Entry / Boot ISO 樣板 / Manjaro
 
 ``` sh
-menuentry "Manjaro xfce 21.2.5 ISO" --class Manjaro {
-	set iso_file="/opt/iso/manjaro/latest/manjaro-xfce-21.2.5-220314-linux515.iso"
-	search --set=iso_partition --no-floppy --file $iso_file
-	probe --set=iso_partition_uuid --fs-uuid $iso_partition
-	set img_dev="/dev/disk/by-uuid/$iso_partition_uuid"
-	loopback loop ($iso_partition)$iso_file
+
+menuentry "Manjaro ISO / Latest" --class manjaro {
+
+	set iso_file="/opt/iso/manjaro/latest/manjaro.iso"
+
+	search --set=iso_partition --no-floppy --file ${iso_file}
+	probe --set=iso_partition_uuid --fs-uuid ${iso_partition}
+
+	set img_dev="/dev/disk/by-uuid/${iso_partition_uuid}"
+
+
+	loopback loop (${iso_partition})${iso_file}
+
+
 	set boot_option=""
 	#set boot_option="lang=zh_TW keytable=us tz=Asia/Taipei"
 	#set boot_option="quiet splash"
-	linux (loop)/boot/vmlinuz-x86_64 img_dev=$img_dev img_loop=$iso_file $boot_option
+
+	linux (loop)/boot/vmlinuz-x86_64 img_dev=${img_dev} img_loop=${iso_file} ${boot_option}
 	#initrd (loop)/boot/initramfs-x86_64.img
 	initrd (loop)/boot/initramfs-x86_64.img (loop)/boot/intel_ucode.img (loop)/boot/amd_ucode.img
+
 }
+
 ```
 
 
@@ -82,18 +105,28 @@ menuentry "Manjaro xfce 21.2.5 ISO" --class Manjaro {
 ## GRUB Menu Entry / Boot ISO 樣板 / Debian
 
 ``` sh
-menuentry "Debian 11 Xfce ISO" --class Debian {
-	set iso_file="/opt/iso/debian/11/debian-live-11.2.0-amd64-xfce.iso"
-	search --set=iso_partition --no-floppy --file $iso_file
-	probe --set=iso_partition_uuid --fs-uuid $iso_partition
-	set img_dev="/dev/disk/by-uuid/$iso_partition_uuid"
-	loopback loop ($iso_partition)$iso_file
+menuentry "Debian ISO / Latest" --class debian {
+
+	set iso_file="/opt/iso/debian/latest/debian.iso"
+
+	search --set=iso_partition --no-floppy --file ${iso_file}
+	probe --set=iso_partition_uuid --fs-uuid ${iso_partition}
+
+	set img_dev="/dev/disk/by-uuid/${iso_partition_uuid}"
+
+
+	loopback loop (${iso_partition})${iso_file}
+
+
 	set boot_option=""
 	#set boot_option="components splash quiet"
 	#set boot_option="components locales=zh_TW.UTF-8 quiet splash"
-	linux (loop)/live/vmlinuz-5.10.0-10-amd64 boot=live buuid=$iso_partition_uuid findiso=$iso_file $boot_option
+
+	linux (loop)/live/vmlinuz-5.10.0-10-amd64 boot=live buuid=${iso_partition_uuid} findiso=${iso_file} ${boot_option}
 	initrd (loop)/live/initrd.img-5.10.0-10-amd64
+
 }
+
 ```
 
 
@@ -103,20 +136,31 @@ menuentry "Debian 11 Xfce ISO" --class Debian {
 
 
 ``` sh
-menuentry "Xubuntu 22.04 Live ISO" --class Ubuntu {
+
+menuentry "Ubuntu ISO / Latest" --class ubuntu {
+
 	set gfxpayload=keep
-	set iso_file="/opt/iso/ubuntu/22.04/xubuntu-22.04-desktop-amd64.iso"
-	search --set=iso_partition --no-floppy --file $iso_file
-	probe --set=iso_partition_uuid --fs-uuid $iso_partition
-	set img_dev="/dev/disk/by-uuid/$iso_partition_uuid"
-	loopback loop ($iso_partition)$iso_file
+	set iso_file="/opt/iso/ubuntu/latest/ubuntu.iso"
+
+	search --set=iso_partition --no-floppy --file ${iso_file}
+	probe --set=iso_partition_uuid --fs-uuid ${iso_partition}
+
+	set img_dev="/dev/disk/by-uuid/${iso_partition_uuid}"
+
+
+	loopback loop (${iso_partition})${iso_file}
+
+
 	set boot_option=""
 	#set boot_option="locale=zh_TW"
 	#set boot_option="quiet splash"
 	#set boot_option="file=/cdrom/preseed/xubuntu.seed maybe-ubiquity ---"
-	linux (loop)/casper/vmlinuz iso-scan/filename=$iso_file boot=casper $boot_option
+
+	linux (loop)/casper/vmlinuz boot=casper iso-scan/filename=${iso_file} ${boot_option}
 	initrd (loop)/casper/initrd
+
 }
+
 ```
 
 
