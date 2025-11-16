@@ -105,6 +105,7 @@ menuentry "Manjaro ISO / Latest" --class manjaro {
 ## GRUB Menu Entry / Boot ISO 樣板 / Debian
 
 ``` sh
+
 menuentry "Debian ISO / Latest" --class debian {
 
 	set iso_file="/opt/iso/debian/latest/debian.iso"
@@ -122,8 +123,8 @@ menuentry "Debian ISO / Latest" --class debian {
 	#set boot_option="components splash quiet"
 	#set boot_option="components locales=zh_TW.UTF-8 quiet splash"
 
-	linux (loop)/live/vmlinuz-5.10.0-10-amd64 boot=live buuid=${iso_partition_uuid} findiso=${iso_file} ${boot_option}
-	initrd (loop)/live/initrd.img-5.10.0-10-amd64
+	linux (loop)/live/vmlinuz boot=live buuid=${iso_partition_uuid} findiso=${iso_file} ${boot_option}
+	initrd (loop)/live/initrd.img
 
 }
 
