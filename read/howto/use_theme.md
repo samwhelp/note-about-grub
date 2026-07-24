@@ -38,8 +38,8 @@ parent: 如何
 
 | 放置路徑 |
 | ---- |
-| /usr/share/grub/themes/ |
-| /boot/grub/themes/ |
+| `/usr/share/grub/themes/` |
+| `/boot/grub/themes/` |
 
 > 上面兩個放置路徑都可以，其他路徑基本上也可以，不限定在上面兩個路徑
 
@@ -67,13 +67,13 @@ parent: 如何
 sudo mkdir -p /boot/grub/themes
 ```
 
-執行下面指令，產生「~/Downloads/download_grub_theme」這個資料夾。
+執行下面指令，產生「`~/Downloads/download_grub_theme`」這個資料夾。
 
 ``` sh
 mkdir -p ~/Downloads/download_grub_theme
 ```
 
-執行下面指令，切換到「~/Downloads/download_grub_theme」這個路徑。
+執行下面指令，切換到「`~/Downloads/download_grub_theme`」這個路徑。
 
 ``` sh
 cd ~/Downloads/download_grub_theme
@@ -85,7 +85,13 @@ cd ~/Downloads/download_grub_theme
 git clone https://github.com/zshzero/dracula-grub2.git dracula
 ```
 
-執行下面指令，複製到「/boot/grub/themes/dracula」這個路徑
+執行下面指令，複製到「`/boot/grub/themes/dracula`」這個路徑。
+
+``` sh
+sudo cp -rfT dracula /boot/grub/themes/dracula
+```
+
+或是執行下面指令，複製到「`/boot/grub/themes/dracula`」這個路徑。
 
 ``` sh
 sudo cp -rf dracula/. /boot/grub/themes/dracula
@@ -95,10 +101,12 @@ sudo cp -rf dracula/. /boot/grub/themes/dracula
 
 接著要執行「[設定採用](#設定採用)」的步驟。
 
->　關於「`dracula/.`」，後面多後面多加了「`/.`」，這樣在複製的時候，可以確保「/boot/grub/themes/dracula」這個資料夾已經存在時，複製過去，會直接覆蓋。
+>　關於「`cp -rfT`」，多了「`T`」，這樣在複製的時候，可以確保「`/boot/grub/themes/dracula`」這個資料夾已經存在時，複製過去，會直接覆蓋。
+
+>　關於「`dracula/.`」，後面多後面多加了「`/.`」，這樣在複製的時候，可以確保「`/boot/grub/themes/dracula`」這個資料夾已經存在時，複製過去，會直接覆蓋。
 
 
-請確保「佈景主題」裡，有「theme.txt」這個檔案，
+請確保「佈景主題」裡，有「`theme.txt`」這個檔案，
 
 也就是「`/boot/grub/themes/dracula/theme.txt`」這個檔案
 
@@ -114,7 +122,7 @@ file /boot/grub/themes/dracula/theme.txt
 /boot/grub/themes/dracula/theme.txt: ASCII text
 ```
 
-執行下面指令，顯示「/boot/grub/themes/dracula」裡的資料夾結構
+執行下面指令，顯示「`/boot/grub/themes/dracula`」裡的資料夾結構
 
 ``` sh
 tree /boot/grub/themes/dracula
@@ -211,6 +219,8 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 > 關於「[update-grub](https://samwhelp.github.io/note-about-grub/read/explore/ubuntu/command/update-grub.html)」這個指令，裡面也是執行「`grub-mkconfig -o /boot/grub/grub.cfg`」，可以參考「[另一篇](https://samwhelp.github.io/note-about-grub/read/explore/ubuntu/command/update-grub.html)」的探索紀錄。
 
 
+
+
 ## 輔助工具
 
 | 工具 | 簡介 |
@@ -219,7 +229,7 @@ sudo grub-mkconfig -o /boot/grub/grub.cfg
 | [grubrc-theme-ctrl](https://samwhelp.github.io/note-about-grub/read/project/grubrc-profile/grubrc-theme-ctrl.html) | 用來輔助「切換」GRUB佈景主題 |
 
 
-根據上面的原理，我開發了兩個輔助指令工具「grubrc-theme-get」和「grubrc-theme-ctrl」。
+根據上面的原理，我開發了兩個輔助指令工具「`grubrc-theme-get`」和「`grubrc-theme-ctrl`」。
 
 
 以上面安裝「[Dracula](https://github.com/zshzero/dracula-grub2/)」的例子
@@ -240,7 +250,7 @@ grubrc-theme-get dracula
 grubrc-theme-ctrl set dracula
 ```
 
-就會編輯「/etc/default/grub」這個檔案，
+就會編輯「`/etc/default/grub`」這個檔案，
 
 設定「GRUB_THEME="/boot/grub/themes/dracula/theme.txt"」，
 
